@@ -167,17 +167,17 @@ MonoBehaviour:
   spriteRenderer: {fileID: 212654992449748560}
   Block1_1_1_1: {fileID: 9068382350983968614, guid: debb7a9ca1645424b8e24160cab9d8c2,
     type: 3}
-  Block1_1_1_0: {fileID: 6757897804379243199, guid: debb7a9ca1645424b8e24160cab9d8c2,
+  Block1_1_1_0: {fileID: 1215064911806852459, guid: debb7a9ca1645424b8e24160cab9d8c2,
     type: 3}
-  Block1_1_0_1: {fileID: 6768717979492401898, guid: debb7a9ca1645424b8e24160cab9d8c2,
+  Block1_1_0_1: {fileID: -4121835539060904816, guid: debb7a9ca1645424b8e24160cab9d8c2,
     type: 3}
-  Block1_0_1_1: {fileID: -5099891286554169108, guid: debb7a9ca1645424b8e24160cab9d8c2,
+  Block1_0_1_1: {fileID: 7805354591597286331, guid: debb7a9ca1645424b8e24160cab9d8c2,
     type: 3}
-  Block0_1_1_1: {fileID: -1724414895344524921, guid: debb7a9ca1645424b8e24160cab9d8c2,
+  Block0_1_1_1: {fileID: -1464467535388251667, guid: debb7a9ca1645424b8e24160cab9d8c2,
     type: 3}
   Block0_1_1_0: {fileID: -1016387791610636912, guid: debb7a9ca1645424b8e24160cab9d8c2,
     type: 3}
-  Block1_1_0_0: {fileID: 1331949160170579244, guid: debb7a9ca1645424b8e24160cab9d8c2,
+  Block1_1_0_0: {fileID: -5513116068031122696, guid: debb7a9ca1645424b8e24160cab9d8c2,
     type: 3}
   Block1_0_0_1: {fileID: -8065941293409737702, guid: debb7a9ca1645424b8e24160cab9d8c2,
     type: 3}
@@ -185,13 +185,13 @@ MonoBehaviour:
     type: 3}
   Block1_0_0_0: {fileID: -1724414895344524921, guid: debb7a9ca1645424b8e24160cab9d8c2,
     type: 3}
-  Block0_1_0_0: {fileID: 7805354591597286331, guid: debb7a9ca1645424b8e24160cab9d8c2,
+  Block0_1_0_0: {fileID: -5099891286554169108, guid: debb7a9ca1645424b8e24160cab9d8c2,
     type: 3}
-  Block0_0_1_0: {fileID: -4121835539060904816, guid: debb7a9ca1645424b8e24160cab9d8c2,
+  Block0_0_1_0: {fileID: 6768717979492401898, guid: debb7a9ca1645424b8e24160cab9d8c2,
     type: 3}
-  Block0_0_0_1: {fileID: 1215064911806852459, guid: debb7a9ca1645424b8e24160cab9d8c2,
+  Block0_0_0_1: {fileID: 6757897804379243199, guid: debb7a9ca1645424b8e24160cab9d8c2,
     type: 3}
-  Block1_0_1_0: {fileID: 6305451015045270709, guid: debb7a9ca1645424b8e24160cab9d8c2,
+  Block1_0_1_0: {fileID: -6759129443739563915, guid: debb7a9ca1645424b8e24160cab9d8c2,
     type: 3}
   Block0_1_0_1: {fileID: 8885387894147674855, guid: debb7a9ca1645424b8e24160cab9d8c2,
     type: 3}
