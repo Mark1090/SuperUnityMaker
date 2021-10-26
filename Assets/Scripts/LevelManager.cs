@@ -34,15 +34,22 @@ public class LevelManager : MonoBehaviour {
         Debug.Log(level_name);
 
     }
-
-    public void Save()
+    void Start()
     {
-        level = (@"C:\Levels\" + level_name + @".bin");
         var path = (@"C:\Levels\");
         if (!Directory.Exists(path))
         {
             Directory.CreateDirectory(path);
         }
+    }
+
+    void Update()
+    {
+        level = (@"C:\Levels\" + level_name + @".bin");
+    }
+
+    public void Save()
+    {
         makerTiles = GameObject.FindObjectsOfType<MakerTile>();
         Tile[] t = new Tile[makerTiles.Length];
         for (int i = 0; i < t.Length; i++)
