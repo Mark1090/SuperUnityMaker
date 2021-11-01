@@ -100,10 +100,10 @@ public class Block_Changer : MonoBehaviour
     {
         if(OutOfRender == false)
         {
-            //UpLeft.SetActive(false);
-            //UpRight.SetActive(false);
-            //DownLeft.SetActive(false);
-            //DownRight.SetActive(false);
+            UpLeft.SetActive(false);
+            UpRight.SetActive(false);
+            DownLeft.SetActive(false);
+            DownRight.SetActive(false);
 
             if ((Up_Block_Check.Changes == true) || (Down_Block_Check.Changes == true) || (Left_Block_Check.Changes == true) || (Right_Block_Check.Changes == true))
             {

@@ -39,7 +39,6 @@ public class Block_Check : MonoBehaviour
         {           
             ObjectScript = Shh;
         }
- 
     }
 
     void OnTriggerExit2D(Collider2D coll)
