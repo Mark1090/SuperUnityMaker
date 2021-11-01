@@ -5,6 +5,8 @@ using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
 
+
+
 [System.Serializable]
 public struct Tile
 {
@@ -20,13 +22,19 @@ public struct Tile
     }
 }
 
+
+
 public class LevelManager : MonoBehaviour {
 
     private string level_name;
-    public MakerTile[] makerTilePrefabs;
+    public Maker_Tile[] makerTilePrefabs;
     private string level;
-    
-    MakerTile[] makerTiles;
+    public Transform parentGameObject;
+    public GameObject parentGameObject2;
+    public Maker MakerScript;
+    public bool loading = false;
+
+    Maker_Tile[] makerTiles;
 
     public void ReadStringInput(string s)
     {
@@ -45,12 +53,12 @@ public class LevelManager : MonoBehaviour {
 
     void Update()
     {
-        level = (@"C:\Levels\" + level_name + @".bin");
+        level = (@"C:\Levels\" + level_name + @".uml");
     }
 
     public void Save()
     {
-        makerTiles = GameObject.FindObjectsOfType<MakerTile>();
+        makerTiles = GameObject.FindObjectsOfType<Maker_Tile>();
         Tile[] t = new Tile[makerTiles.Length];
         for (int i = 0; i < t.Length; i++)
         {
@@ -71,7 +79,8 @@ public class LevelManager : MonoBehaviour {
     }
     public void Load()
     {
-        makerTiles = GameObject.FindObjectsOfType<MakerTile>();
+        loading = true;
+        makerTiles = GameObject.FindObjectsOfType<Maker_Tile>();
         foreach (var i in makerTiles)
         {
             Destroy(i.gameObject);
@@ -84,19 +93,27 @@ public class LevelManager : MonoBehaviour {
                                       FileShare.Read);
         var obj = (Tile[])formatter.Deserialize(stream);
         stream.Close();
-
+        MakerScript.Counter[MakerScript.id] = obj.Length;
         for (int i = 0; i < obj.Length; i++)
         {
             Instantiate(makerTilePrefabs[obj[i].id],
-                new Vector3(obj[i].x, obj[i].y, obj[i].z),
-                Quaternion.identity);
+                new Vector3(obj[i].x, obj[i].y, obj[i].z), Quaternion.identity, parentGameObject);
+            
         }
+        StartCoroutine(parent());
+        parentGameObject2.SetActive(false);
         Debug.Log("Level Loaded");
+    }
+
+    IEnumerator parent()
+    {
+        yield return new WaitForEndOfFrame();
+        parentGameObject2.SetActive(true);
     }
 
     void Clear()
     {
-        makerTiles = GameObject.FindObjectsOfType<MakerTile>();
+        makerTiles = GameObject.FindObjectsOfType<Maker_Tile>();
         foreach (var i in makerTiles)
         {
             Destroy(i.gameObject);

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MakerTile : MonoBehaviour
+public class Maker_Tile : MonoBehaviour
 {
     public Sprite sprite;
     public int id;

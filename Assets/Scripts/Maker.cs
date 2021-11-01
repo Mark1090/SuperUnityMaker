@@ -5,17 +5,23 @@ using UnityEngine.UI;
 
 public class Maker : MonoBehaviour
 {
-    public MakerTile[] tiles;
+    public Maker_Tile[] tiles;
     public GameObject buttonPrefab;
+    public GameObject Refresher;
     public Transform layout;
     public SpriteRenderer preview;
     public GameObject[] playingObjects;
+    private Maker_Tile TileId;
 
-    int id;
+    public int[] Counter;
+    public int[] Max;
+
+    public Transform parentGameObject;
+
+    public int id;
 
     public static bool playing;
 
-	// Use this for initialization
 	void Start ()
     {
         for (int i = 0; i < tiles.Length; i++)
@@ -41,7 +47,6 @@ public class Maker : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject())
@@ -58,10 +63,18 @@ public class Maker : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
+           
             var c = Physics2D.CircleCast(pos, 0.4f, Vector2.zero);
             if (c.collider == null)
             {
-                Instantiate(tiles[id].gameObject, pos, Quaternion.identity);
+                //if (id == 0)
+                //{
+                    if (Counter[id] < Max[id])
+                    {
+                        Instantiate(tiles[id].gameObject, pos, Quaternion.identity, parentGameObject);
+                        Counter[id]++;
+                    }
+                //}
             }
         }
         if (Input.GetKeyDown(KeyCode.Mouse1))
@@ -69,7 +82,9 @@ public class Maker : MonoBehaviour
             var c = Physics2D.CircleCast(pos, 0.4f, Vector2.zero);
             if (c.collider != null)
             {
+                TileId = c.collider.gameObject.GetComponent<Maker_Tile>();
                 Destroy(c.collider.gameObject);
+                Counter[TileId.id] = Counter[TileId.id] - 1;
             }
         }
 

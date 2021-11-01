@@ -4,59 +4,53 @@ using UnityEngine;
 
 public class Block_Check : MonoBehaviour
 {
-    public bool Up;
-    public bool Down;
-    public bool Left;
-    public bool Right;
+    public string ObjectTag;
+    public string ObjectName = "none";
 
-    public string BlockTag;
+    public Block_Changer ObjectScript;
+    public Block_Changer Shh;
 
-    public bool Touching_Up;
-    public bool Touching_Down;
-    public bool Touching_Left;
-    public bool Touching_Right;
+    public bool Touching = false;
+    public bool Changes = true;
 
-    void OnCollisionEnter2D(Collision2D coll)
+    void Update()
     {
-        if (coll.gameObject.tag == BlockTag )
+        if (Changes == true)
         {
-            Debug.Log("Hit" + coll.gameObject.name);
-            if (Up)
-            {
-                Touching_Up = true;
-            }
-            if (Down)
-            {
-                Touching_Down = true;
-            }
-            if (Left)
-            {
-                Touching_Left = true;
-            }
-            if (Right)
-            {
-                Touching_Right = true;
-            }
+            Changes = false;
         }
     }
-    void OnCollisionExit2D(Collision2D coll)
+
+    void OnTriggerEnter2D(Collider2D coll)
     {
-        if (Up)
+        if (coll.gameObject.tag == ObjectTag)
         {
-            Touching_Up = false;
+            Touching = true;
+
+            Changes = true;
         }
-        if (Down)
+
+    }
+
+    void OnTriggerStay2D(Collider2D coll)
+    {
+        ObjectScript = coll.gameObject.GetComponent<Block_Changer>();
+        if (ObjectScript == null)
+        {           
+            ObjectScript = Shh;
+        }
+ 
+    }
+
+    void OnTriggerExit2D(Collider2D coll)
+    {
+        if (coll.gameObject.tag == ObjectTag)
         {
-            Touching_Down = false;
+            Touching = false;
+
+            Changes = true;
         }
-        if (Left)
-        {
-            Touching_Left = false;
-        }
-        if (Right)
-        {
-            Touching_Right = false;
-        }
+
     }
 }
 
