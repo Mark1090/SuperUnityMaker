@@ -2131,6 +2131,7 @@ MonoBehaviour:
   - {fileID: 114093529759735682, guid: a39d5a00fe23a3f4888d9e18da3992cd, type: 3}
   - {fileID: 114533611775884578, guid: 1cbee08c9f78b804082e3be96ae9cb1a, type: 3}
   - {fileID: 114093529759735682, guid: 398bf0dc98ecaf541ad754e2c669112c, type: 3}
+  - {fileID: 6342575377914612071, guid: 74dec504ea7eccf45ab818f6178476db, type: 3}
   parentGameObject: {fileID: 607419255}
   parentGameObject2: {fileID: 607419254}
   MakerScript: {fileID: 1625783565}
@@ -2151,6 +2152,7 @@ MonoBehaviour:
   - {fileID: 114093529759735682, guid: a39d5a00fe23a3f4888d9e18da3992cd, type: 3}
   - {fileID: 114533611775884578, guid: 1cbee08c9f78b804082e3be96ae9cb1a, type: 3}
   - {fileID: 114093529759735682, guid: 398bf0dc98ecaf541ad754e2c669112c, type: 3}
+  - {fileID: 6342575377914612071, guid: 74dec504ea7eccf45ab818f6178476db, type: 3}
   buttonPrefab: {fileID: 1835065845224922, guid: 19ed3cc6166c44a46be8ad03a00c560a,
     type: 3}
   Refresher: {fileID: 6753632884252763492, guid: e4b49228f98b52344a70325589a3051b,
@@ -2161,8 +2163,9 @@ MonoBehaviour:
   - {fileID: 1571092552409050, guid: a39d5a00fe23a3f4888d9e18da3992cd, type: 3}
   - {fileID: 1269224783214210, guid: 1cbee08c9f78b804082e3be96ae9cb1a, type: 3}
   - {fileID: 1571092552409050, guid: 398bf0dc98ecaf541ad754e2c669112c, type: 3}
-  Counter: 000000000000000000000000
-  Max: d00f0000f606000004000000
+  - {fileID: 6455234004374014271, guid: 74dec504ea7eccf45ab818f6178476db, type: 3}
+  Counter: 00000000000000000000000000000000
+  Max: d00f0000f60600000400000004000000
   parentGameObject: {fileID: 607419255}
   id: 0
 --- !u!114 &1625783566
