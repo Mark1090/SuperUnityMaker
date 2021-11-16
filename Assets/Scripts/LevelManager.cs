@@ -93,12 +93,12 @@ public class LevelManager : MonoBehaviour {
                                       FileShare.Read);
         var obj = (Tile[])formatter.Deserialize(stream);
         stream.Close();
-        MakerScript.Counter[MakerScript.id] = obj.Length;
+        
         for (int i = 0; i < obj.Length; i++)
         {
             Instantiate(makerTilePrefabs[obj[i].id],
                 new Vector3(obj[i].x, obj[i].y, obj[i].z), Quaternion.identity, parentGameObject);
-            
+            MakerScript.Counter[MakerScript.id] = obj[i].id;
         }
         StartCoroutine(parent());
         parentGameObject2.SetActive(false);

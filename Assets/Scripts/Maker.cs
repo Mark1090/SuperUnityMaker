@@ -60,31 +60,33 @@ public class Maker : MonoBehaviour
         pos.y = Mathf.RoundToInt(pos.y);
 
         preview.transform.position = pos;
-
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (!playing)
         {
-           
-            var c = Physics2D.CircleCast(pos, 0.4f, Vector2.zero);
-            if (c.collider == null)
+            if (Input.GetKeyDown(KeyCode.Mouse0))
             {
-                //if (id == 0)
-                //{
+
+                var c = Physics2D.CircleCast(pos, 0.4f, Vector2.zero);
+                if (c.collider == null)
+                {
+                    //if (id == 0)
+                    //{
                     if (Counter[id] < Max[id])
                     {
                         Instantiate(tiles[id].gameObject, pos, Quaternion.identity, parentGameObject);
                         Counter[id]++;
                     }
-                //}
+                    //}
+                }
             }
-        }
-        if (Input.GetKeyDown(KeyCode.Mouse1))
-        {
-            var c = Physics2D.CircleCast(pos, 0.4f, Vector2.zero);
-            if (c.collider != null)
+            if (Input.GetKeyDown(KeyCode.Mouse1))
             {
-                TileId = c.collider.gameObject.GetComponent<Maker_Tile>();
-                Destroy(c.collider.gameObject);
-                Counter[TileId.id] = Counter[TileId.id] - 1;
+                var c = Physics2D.CircleCast(pos, 0.4f, Vector2.zero);
+                if (c.collider != null)
+                {
+                    TileId = c.collider.gameObject.GetComponent<Maker_Tile>();
+                    Destroy(c.collider.gameObject);
+                    Counter[TileId.id] = Counter[TileId.id] - 1;
+                }
             }
         }
 
