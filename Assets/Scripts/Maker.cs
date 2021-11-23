@@ -81,11 +81,15 @@ public class Maker : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Mouse1))
             {
                 var c = Physics2D.CircleCast(pos, 0.4f, Vector2.zero);
+                
                 if (c.collider != null)
                 {
-                    TileId = c.collider.gameObject.GetComponent<Maker_Tile>();
-                    Destroy(c.collider.gameObject);
-                    Counter[TileId.id] = Counter[TileId.id] - 1;
+                    if(!(c.collider.gameObject.layer == 6))
+                    {
+                        TileId = c.collider.gameObject.GetComponent<Maker_Tile>();
+                        Destroy(c.collider.gameObject);
+                        Counter[TileId.id] = Counter[TileId.id] - 1;
+                    }
                 }
             }
         }
