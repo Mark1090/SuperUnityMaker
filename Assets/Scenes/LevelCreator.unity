@@ -3858,6 +3858,35 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4094845447437942, guid: cbb0651332e7dd744b0292df95c6e397, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 70596448294677920, guid: cbb0651332e7dd744b0292df95c6e397,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 70596448294677920, guid: cbb0651332e7dd744b0292df95c6e397,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114837572701780754, guid: cbb0651332e7dd744b0292df95c6e397,
+        type: 3}
+      propertyPath: jumpSpeed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114837572701780754, guid: cbb0651332e7dd744b0292df95c6e397,
+        type: 3}
+      propertyPath: groundCheckSize.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114837572701780754, guid: cbb0651332e7dd744b0292df95c6e397,
+        type: 3}
+      propertyPath: groundCheckSize.y
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 212477083220835562, guid: cbb0651332e7dd744b0292df95c6e397,
         type: 3}
       propertyPath: m_FlipX
