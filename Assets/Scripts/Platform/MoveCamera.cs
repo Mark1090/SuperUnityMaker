@@ -7,13 +7,17 @@ public class MoveCamera : MonoBehaviour
     public Maker makerScript;
     public LevelManager managerScript;
     public float limit = 100;
+    public GameObject player;
+    public float offset;
+    private Vector3 playerPosition;
+    public float offsetSmoothing;
 
     void Start()
     {
         
     }
 
-    void FixedUpdate()
+    void Update()
     {
         if (!Maker.playing)
         {
@@ -34,6 +38,29 @@ public class MoveCamera : MonoBehaviour
                 }
             }
         }
+        else
+        {
+            playerPosition = new Vector3(player.transform.position.x, transform.position.y, transform.position.z);
+            if (player.transform.localScale.x > 0f)
+            {
+                playerPosition = new Vector3(playerPosition.x + offset, playerPosition.y, playerPosition.z);
+            }
+            else
+            {
+                playerPosition = new Vector3(playerPosition.x - offset, playerPosition.y, playerPosition.z);
+            }
+            if (player.transform.position.x > 0)
+            {
+                transform.position = Vector3.Lerp(transform.position, playerPosition, offsetSmoothing * Time.deltaTime);
+            }
+            else
+            {
+
+                playerPosition = new Vector3(-0.5f, playerPosition.y, playerPosition.z);
+                transform.position = Vector3.Lerp(transform.position, playerPosition, offsetSmoothing * Time.deltaTime);
+            }
+        }
+
         if (this.transform.position.x < -0.5)
         {
             this.transform.TransformVector(new Vector3(-0.5f, 0f, 0f));

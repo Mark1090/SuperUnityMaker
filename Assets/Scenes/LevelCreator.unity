@@ -3625,6 +3625,9 @@ MonoBehaviour:
   makerScript: {fileID: 1625783565}
   managerScript: {fileID: 1625783564}
   limit: 239.5
+  player: {fileID: 1862363853}
+  offset: 1
+  offsetSmoothing: 1
 --- !u!61 &1671616188
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3632,7 +3635,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1671616182}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
