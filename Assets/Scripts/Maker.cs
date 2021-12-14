@@ -54,6 +54,7 @@ public class Maker : MonoBehaviour
         if (playing)
             return;
 
+        var c = Physics2D.CircleCast(pos, 0.4f, Vector2.zero);
         var pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         pos.z = 0;
         pos.x = Mathf.RoundToInt(pos.x);
@@ -62,26 +63,19 @@ public class Maker : MonoBehaviour
         preview.transform.position = pos;
         if (!playing)
         {
-            if (Input.GetKeyDown(KeyCode.Mouse0))
+            if (Input.GetKey(KeyCode.Mouse0))
             {
-
-                var c = Physics2D.CircleCast(pos, 0.4f, Vector2.zero);
                 if (c.collider == null)
                 {
-                    //if (id == 0)
-                    //{
                     if (Counter[id] < Max[id])
                     {
                         Instantiate(tiles[id].gameObject, pos, Quaternion.identity, parentGameObject);
                         Counter[id]++;
                     }
-                    //}
                 }
             }
-            if (Input.GetKeyDown(KeyCode.Mouse1))
+            if (Input.GetKey(KeyCode.Mouse1))
             {
-                var c = Physics2D.CircleCast(pos, 0.4f, Vector2.zero);
-                
                 if (c.collider != null)
                 {
                     if(!(c.collider.gameObject.layer == 6))
