@@ -54,8 +54,8 @@ public class Maker : MonoBehaviour
         if (playing)
             return;
 
-        var c = Physics2D.CircleCast(pos, 0.4f, Vector2.zero);
         var pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
         pos.z = 0;
         pos.x = Mathf.RoundToInt(pos.x);
         pos.y = Mathf.RoundToInt(pos.y);
@@ -65,6 +65,7 @@ public class Maker : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.Mouse0))
             {
+                var c = Physics2D.CircleCast(pos, 0.4f, Vector2.zero);
                 if (c.collider == null)
                 {
                     if (Counter[id] < Max[id])
@@ -76,9 +77,10 @@ public class Maker : MonoBehaviour
             }
             if (Input.GetKey(KeyCode.Mouse1))
             {
+                var c = Physics2D.CircleCast(pos, 0.4f, Vector2.zero);
                 if (c.collider != null)
                 {
-                    if(!(c.collider.gameObject.layer == 6))
+                    if (!(c.collider.gameObject.layer == 6))
                     {
                         TileId = c.collider.gameObject.GetComponent<Maker_Tile>();
                         Destroy(c.collider.gameObject);
