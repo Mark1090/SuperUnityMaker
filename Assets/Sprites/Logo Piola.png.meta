@@ -1,7 +1,52 @@
 fileFormatVersion: 2
 guid: 0df03d4bfb2231148b526a2e51429624
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -2622459170540538279
+    second: Logo Piola_0
+  - first:
+      213: -7919131019981927767
+    second: Logo Piola_1
+  - first:
+      213: -6004237610195341455
+    second: Logo Piola_2
+  - first:
+      213: 7140637874966161422
+    second: Logo Piola_3
+  - first:
+      213: 8224789987265972422
+    second: Logo Piola_4
+  - first:
+      213: 5936211395905865416
+    second: Logo Piola_5
+  - first:
+      213: 3292834375474313044
+    second: Logo Piola_6
+  - first:
+      213: -3329458092945614326
+    second: Logo Piola_7
+  - first:
+      213: -4507831944003590617
+    second: Logo Piola_8
+  - first:
+      213: -3974677589819641438
+    second: Logo Piola_9
+  - first:
+      213: -3317854299287734362
+    second: Logo Piola_10
+  - first:
+      213: 1343655191692328080
+    second: Logo Piola_11
+  - first:
+      213: -8400087652777726415
+    second: Logo Piola_12
+  - first:
+      213: -2282486478053874306
+    second: Logo Piola_13
+  - first:
+      213: 8959982199120373552
+    second: Logo Piola_14
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +86,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -89,7 +134,322 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Logo Piola_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 22
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95637fd57472b9bd0800000000000000
+      internalID: -2622459170540538279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo Piola_1
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 22
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aa43307b48991290800000000000000
+      internalID: -7919131019981927767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo Piola_2
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 22
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17f244194b9acaca0800000000000000
+      internalID: -6004237610195341455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo Piola_3
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 22
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e08ee078054a81360800000000000000
+      internalID: 7140637874966161422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo Piola_4
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 22
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c88d27aae2542270800000000000000
+      internalID: 8224789987265972422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo Piola_5
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 22
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c6489c20d8a16250800000000000000
+      internalID: 5936211395905865416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo Piola_6
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 22
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45777561b6f72bd20800000000000000
+      internalID: 3292834375474313044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo Piola_7
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 22
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0a5d6331836bc1d0800000000000000
+      internalID: -3329458092945614326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo Piola_8
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 22
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 726e18efab6f071c0800000000000000
+      internalID: -4507831944003590617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo Piola_9
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 22
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a138127acb17d8c0800000000000000
+      internalID: -3974677589819641438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo Piola_10
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 0
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a7b372f71d94f1d0800000000000000
+      internalID: -3317854299287734362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo Piola_11
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 0
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09c3e61274f95a210800000000000000
+      internalID: 1343655191692328080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo Piola_12
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 0
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13ee90e09c4ec6b80800000000000000
+      internalID: -8400087652777726415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo Piola_13
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 0
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7567fe24aaf250e0800000000000000
+      internalID: -2282486478053874306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo Piola_14
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 0
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 037a46c8650485c70800000000000000
+      internalID: 8959982199120373552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
