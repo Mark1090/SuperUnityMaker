@@ -83,8 +83,8 @@ public class Maker : MonoBehaviour
                     if (!(c.collider.gameObject.layer == 6))
                     {
                         TileId = c.collider.gameObject.GetComponent<Maker_Tile>();
-                        Destroy(c.collider.gameObject);
                         Counter[TileId.id] = Counter[TileId.id] - 1;
+                        Destroy(c.collider.gameObject);
                     }
                 }
             }

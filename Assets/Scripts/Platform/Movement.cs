@@ -29,9 +29,14 @@ public class Movement : MonoBehaviour
                                         Vector2.zero); 
 
 	    	if (cc.collider == null)
+            {
 				return false;
+			}
+
 			if (cc.collider.gameObject == gameObject)
-				return false;		
+            {
+				return false;
+			}	
 			
 			return true;
 		}
@@ -49,7 +54,9 @@ public class Movement : MonoBehaviour
 	void OnDrawGizmosSelected()
 	{
 		if (!groundCheckPosition)
+        {
 			return;
+		}
 		Gizmos.DrawWireCube ((Vector3) groundCheckPosition.position, (Vector3)groundCheckSize);
 	}
 
@@ -57,7 +64,9 @@ public class Movement : MonoBehaviour
 	void Update () 
 	{
         if (!Maker.playing)
-            return;
+        {
+			return;
+		}
 
         ground = IsGround;
 
@@ -70,7 +79,9 @@ public class Movement : MonoBehaviour
 	void FixedUpdate()
 	{
         if (!Maker.playing)
-            return;
+        {
+			return;
+		}
 
         if (jumpRequest) 
 		{
