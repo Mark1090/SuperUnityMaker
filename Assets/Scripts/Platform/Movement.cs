@@ -9,6 +9,7 @@ public class Movement : MonoBehaviour
 	[Header("Control")]
 	public float speed = 5;
 	public float jumpSpeed = 5;
+	public bool once = false;
 
 	[Header("GroundCheck")]
 	public Transform groundCheckPosition;
@@ -65,9 +66,22 @@ public class Movement : MonoBehaviour
 	{
         if (!Maker.playing)
         {
+			rb.simulated = false;
+			once = false;
+
 			return;
 		}
+        else
+        {
+			rb.simulated = true;
 
+			if (once == false)
+			{
+				Vector3 newpos = new Vector3(-9.0f, -5.0f, 0.0f);
+				this.transform.position = newpos;
+				once = true;
+			}
+		}
         ground = IsGround;
 
 		ManageFlip ();
