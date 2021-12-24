@@ -80,15 +80,19 @@ public class Maker : MonoBehaviour
                 var c = Physics2D.CircleCast(pos, 0.4f, Vector2.zero);
                 if (c.collider != null)
                 {
+                    if (c.collider.gameObject.GetComponent<Maker_Tile>().id == 4)
+                    {
+                    c.collider.gameObject.GetComponent<Block_Changer>().mode = "none";
+                    }
+
                     if (!(c.collider.gameObject.layer == 6))
                     {
                         TileId = c.collider.gameObject.GetComponent<Maker_Tile>();
                         Counter[TileId.id] = Counter[TileId.id] - 1;
                         Destroy(c.collider.gameObject);
-                    }
+                    }  
                 }
             }
         }
-
     }
 }

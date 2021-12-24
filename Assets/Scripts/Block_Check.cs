@@ -5,7 +5,7 @@ using UnityEngine;
 public class Block_Check : MonoBehaviour
 {
     public string ObjectTag;
-    public string ObjectName = "none";
+    //public string ObjectName = "none";
 
     public Block_Changer ObjectScript;
     public Block_Changer Shh;
@@ -34,9 +34,13 @@ public class Block_Check : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D coll)
     {
-        ObjectScript = coll.gameObject.GetComponent<Block_Changer>();
+        if (coll.gameObject.tag == ObjectTag)
+        {
+            ObjectScript = coll.gameObject.GetComponent<Block_Changer>();
+        }
+
         if (ObjectScript == null)
-        {           
+        {
             ObjectScript = Shh;
         }
     }
@@ -48,6 +52,11 @@ public class Block_Check : MonoBehaviour
             Touching = false;
 
             Changes = true;
+        }
+
+        if (ObjectScript == null)
+        {
+            ObjectScript = Shh;
         }
 
     }
