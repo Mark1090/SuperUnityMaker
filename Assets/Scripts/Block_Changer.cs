@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Block_Changer : MonoBehaviour
 {
-    public SpriteRenderer spriteRenderer;
+    private SpriteRenderer spriteRenderer;
+
     public Sprite Block1_1_1_1;
     public Sprite Block1_1_1_0;
     public Sprite Block1_1_0_1;
@@ -22,7 +23,7 @@ public class Block_Changer : MonoBehaviour
     public Sprite Block0_1_0_1;
     public Sprite Block0_0_0_0;
 
-    public Sprite ChangeTo;
+    private Sprite ChangeTo;
 
     public GameObject UpLeft;
     public GameObject UpRight;
@@ -48,6 +49,7 @@ public class Block_Changer : MonoBehaviour
 
     void Start()
     {
+        spriteRenderer = this.GetComponent<SpriteRenderer>();
         UpLeft.SetActive(true);
         UpRight.SetActive(true);
         DownLeft.SetActive(true);
@@ -199,170 +201,170 @@ public class Block_Changer : MonoBehaviour
 
     void Detect()
     {
-        UpLeft.SetActive(false);
-        UpRight.SetActive(false);
-        DownLeft.SetActive(false);
-        DownRight.SetActive(false);
+         UpLeft.SetActive(false);
+         UpRight.SetActive(false);
+         DownLeft.SetActive(false);
+         DownRight.SetActive(false);
 
-        if (!(UpBlockCheck.Touching) && !(RightBlockCheck.Touching) && !(DownBlockCheck.Touching) && !(LeftBlockCheck.Touching))
-        {
-            mode = "Block0_0_0_0";
-            ChangeTo = Block0_0_0_0;
-            ChangeSprite();
-        }
-        else
-        {
-            if ((UpBlockCheck.Touching) && (RightBlockCheck.Touching) && (DownBlockCheck.Touching) && (LeftBlockCheck.Touching))
-            {
-                mode = "Block1_1_1_1";
-                ChangeTo = Block1_1_1_1;
-                ChangeSprite();
-            }
-            else
-            {
-                if ((UpBlockCheck.Touching) && (RightBlockCheck.Touching) && (DownBlockCheck.Touching) && !(LeftBlockCheck.Touching))
-                {
-                    mode = "Block1_1_1_0";
-                    ChangeTo = Block1_1_1_0;
-                    ChangeSprite();
-                }
-                else
-                {
-                    if ((UpBlockCheck.Touching) && (RightBlockCheck.Touching) && !(DownBlockCheck.Touching) && (LeftBlockCheck.Touching))
-                    {
-                        mode = "Block1_1_0_1";
-                        ChangeTo = Block1_1_0_1;
-                        ChangeSprite();
-                    }
-                    else
-                    {
-                        if ((UpBlockCheck.Touching) && !(RightBlockCheck.Touching) && (DownBlockCheck.Touching) && (LeftBlockCheck.Touching))
-                        {
-                            mode = "Block1_0_1_1";
-                            ChangeTo = Block1_0_1_1; 
-                            ChangeSprite();
-                        }
-                        else
-                        {
-                            if (!(UpBlockCheck.Touching) && (RightBlockCheck.Touching) && (DownBlockCheck.Touching) && (LeftBlockCheck.Touching))
-                            {
-                                mode = "Block0_1_1_1";
-                                ChangeTo = Block0_1_1_1;
-                                ChangeSprite();
-                            }
-                            else
-                            {
-                                if (!(UpBlockCheck.Touching) && (RightBlockCheck.Touching) && (DownBlockCheck.Touching) && !(LeftBlockCheck.Touching))
-                                {
-                                    mode = "Block0_1_1_0";
-                                    ChangeTo = Block0_1_1_0;
-                                    ChangeSprite();
-                                }
-                                else
-                                {
-                                    if ((UpBlockCheck.Touching) && (RightBlockCheck.Touching) && !(DownBlockCheck.Touching) && !(LeftBlockCheck.Touching))
-                                    {
-                                        mode = "Block1_1_0_0";
-                                        ChangeTo = Block1_1_0_0;
-                                        ChangeSprite();
-                                    }
-                                    else
-                                    {
-                                        if ((UpBlockCheck.Touching) && !(RightBlockCheck.Touching) && !(DownBlockCheck.Touching) && (LeftBlockCheck.Touching))
-                                        {
-                                            mode = "Block1_0_0_1";
-                                            ChangeTo = Block1_0_0_1;
-                                            ChangeSprite();
-                                        }
-                                        else
-                                        {
-                                            if (!(UpBlockCheck.Touching) && !(RightBlockCheck.Touching) && (DownBlockCheck.Touching) && (LeftBlockCheck.Touching))
-                                            {
-                                                mode = "Block0_0_1_1";
-                                                ChangeTo = Block0_0_1_1;
-                                                ChangeSprite();
-                                            }
-                                            else
-                                            {
-                                                if ((UpBlockCheck.Touching) && !(RightBlockCheck.Touching) && !(DownBlockCheck.Touching) && !(LeftBlockCheck.Touching))
-                                                {
-                                                    mode = "Block1_0_0_0";
-                                                    ChangeTo = Block1_0_0_0;
-                                                    ChangeSprite();
-                                                }
-                                                else
-                                                {
-                                                    if (!(UpBlockCheck.Touching) && (RightBlockCheck.Touching) && !(DownBlockCheck.Touching) && !(LeftBlockCheck.Touching))
-                                                    {
-                                                        mode = "Block0_1_0_0";
-                                                        ChangeTo = Block0_1_0_0;
-                                                        ChangeSprite();
-                                                    }
-                                                    else
-                                                    {
-                                                        if (!(UpBlockCheck.Touching) && !(RightBlockCheck.Touching) && (DownBlockCheck.Touching) && !(LeftBlockCheck.Touching))
-                                                        {
-                                                            mode = "Block0_0_1_0";
-                                                            ChangeTo = Block0_0_1_0;
-                                                            ChangeSprite();
-                                                        }
-                                                        else
-                                                        {
-                                                            if (!(UpBlockCheck.Touching) && !(RightBlockCheck.Touching) && !(DownBlockCheck.Touching) && (LeftBlockCheck.Touching))
-                                                            {
-                                                                mode = "Block0_0_0_1";
-                                                                ChangeTo = Block0_0_0_1;
-                                                                ChangeSprite();
-                                                            }
-                                                            else
-                                                            {
-                                                                if ((UpBlockCheck.Touching) && !(RightBlockCheck.Touching) && (DownBlockCheck.Touching) && !(LeftBlockCheck.Touching))
-                                                                {
-                                                                    mode = "Block1_0_1_0";
-                                                                    ChangeTo = Block1_0_1_0;
-                                                                    ChangeSprite();
-                                                                }
-                                                                else
-                                                                {
-                                                                    if (!(UpBlockCheck.Touching) && (RightBlockCheck.Touching) && !(DownBlockCheck.Touching) && (LeftBlockCheck.Touching))
-                                                                    {
-                                                                        mode = "Block0_1_0_1";
-                                                                        ChangeTo = Block0_1_0_1;
-                                                                        ChangeSprite();
-                                                                    }
+         if (!(UpBlockCheck.Touching) && !(RightBlockCheck.Touching) && !(DownBlockCheck.Touching) && !(LeftBlockCheck.Touching))
+         {
+             mode = "Block0_0_0_0";
+             ChangeTo = Block0_0_0_0;
+             ChangeSprite();
+         }
+         else
+         {
+             if ((UpBlockCheck.Touching) && (RightBlockCheck.Touching) && (DownBlockCheck.Touching) && (LeftBlockCheck.Touching))
+             {
+                 mode = "Block1_1_1_1";
+                 ChangeTo = Block1_1_1_1;
+                 ChangeSprite();
+             }
+             else
+             {
+                 if ((UpBlockCheck.Touching) && (RightBlockCheck.Touching) && (DownBlockCheck.Touching) && !(LeftBlockCheck.Touching))
+                 {
+                     mode = "Block1_1_1_0";
+                     ChangeTo = Block1_1_1_0;
+                     ChangeSprite();
+                 }
+                 else
+                 {
+                     if ((UpBlockCheck.Touching) && (RightBlockCheck.Touching) && !(DownBlockCheck.Touching) && (LeftBlockCheck.Touching))
+                     {
+                         mode = "Block1_1_0_1";
+                         ChangeTo = Block1_1_0_1;
+                         ChangeSprite();
+                     }
+                     else
+                     {
+                         if ((UpBlockCheck.Touching) && !(RightBlockCheck.Touching) && (DownBlockCheck.Touching) && (LeftBlockCheck.Touching))
+                         {
+                             mode = "Block1_0_1_1";
+                             ChangeTo = Block1_0_1_1; 
+                             ChangeSprite();
+                         }
+                         else
+                         {
+                             if (!(UpBlockCheck.Touching) && (RightBlockCheck.Touching) && (DownBlockCheck.Touching) && (LeftBlockCheck.Touching))
+                             {
+                                 mode = "Block0_1_1_1";
+                                 ChangeTo = Block0_1_1_1;
+                                 ChangeSprite();
+                             }
+                             else
+                             {
+                                 if (!(UpBlockCheck.Touching) && (RightBlockCheck.Touching) && (DownBlockCheck.Touching) && !(LeftBlockCheck.Touching))
+                                 {
+                                     mode = "Block0_1_1_0";
+                                     ChangeTo = Block0_1_1_0;
+                                     ChangeSprite();
+                                 }
+                                 else
+                                 {
+                                     if ((UpBlockCheck.Touching) && (RightBlockCheck.Touching) && !(DownBlockCheck.Touching) && !(LeftBlockCheck.Touching))
+                                     {
+                                         mode = "Block1_1_0_0";
+                                         ChangeTo = Block1_1_0_0;
+                                         ChangeSprite();
+                                     }
+                                     else
+                                     {
+                                         if ((UpBlockCheck.Touching) && !(RightBlockCheck.Touching) && !(DownBlockCheck.Touching) && (LeftBlockCheck.Touching))
+                                         {
+                                             mode = "Block1_0_0_1";
+                                             ChangeTo = Block1_0_0_1;
+                                             ChangeSprite();
+                                         }
+                                         else
+                                         {
+                                             if (!(UpBlockCheck.Touching) && !(RightBlockCheck.Touching) && (DownBlockCheck.Touching) && (LeftBlockCheck.Touching))
+                                             {
+                                                 mode = "Block0_0_1_1";
+                                                 ChangeTo = Block0_0_1_1;
+                                                 ChangeSprite();
+                                             }
+                                             else
+                                             {
+                                                 if ((UpBlockCheck.Touching) && !(RightBlockCheck.Touching) && !(DownBlockCheck.Touching) && !(LeftBlockCheck.Touching))
+                                                 {
+                                                     mode = "Block1_0_0_0";
+                                                     ChangeTo = Block1_0_0_0;
+                                                     ChangeSprite();
+                                                 }
+                                                 else
+                                                 {
+                                                     if (!(UpBlockCheck.Touching) && (RightBlockCheck.Touching) && !(DownBlockCheck.Touching) && !(LeftBlockCheck.Touching))
+                                                     {
+                                                         mode = "Block0_1_0_0";
+                                                         ChangeTo = Block0_1_0_0;
+                                                         ChangeSprite();
+                                                     }
+                                                     else
+                                                     {
+                                                         if (!(UpBlockCheck.Touching) && !(RightBlockCheck.Touching) && (DownBlockCheck.Touching) && !(LeftBlockCheck.Touching))
+                                                         {
+                                                             mode = "Block0_0_1_0";
+                                                             ChangeTo = Block0_0_1_0;
+                                                             ChangeSprite();
+                                                         }
+                                                         else
+                                                         {
+                                                             if (!(UpBlockCheck.Touching) && !(RightBlockCheck.Touching) && !(DownBlockCheck.Touching) && (LeftBlockCheck.Touching))
+                                                             {
+                                                                 mode = "Block0_0_0_1";
+                                                                 ChangeTo = Block0_0_0_1;
+                                                                 ChangeSprite();
+                                                             }
+                                                             else
+                                                             {
+                                                                 if ((UpBlockCheck.Touching) && !(RightBlockCheck.Touching) && (DownBlockCheck.Touching) && !(LeftBlockCheck.Touching))
+                                                                 {
+                                                                     mode = "Block1_0_1_0";
+                                                                     ChangeTo = Block1_0_1_0;
+                                                                     ChangeSprite();
+                                                                 }
+                                                                 else
+                                                                 {
+                                                                     if (!(UpBlockCheck.Touching) && (RightBlockCheck.Touching) && !(DownBlockCheck.Touching) && (LeftBlockCheck.Touching))
+                                                                     {
+                                                                         mode = "Block0_1_0_1";
+                                                                         ChangeTo = Block0_1_0_1;
+                                                                         ChangeSprite();
+                                                                     }
 
-                                                                }
+                                                                 }
 
-                                                            }
+                                                             }
 
-                                                        }
+                                                         }
 
-                                                    }
+                                                     }
 
-                                                }
+                                                 }
 
-                                            }
+                                             }
 
-                                        }
-                                        
-                                    }
+                                         }
 
-                                }
+                                     }
 
-                            }
+                                 }
 
-                        }
+                             }
 
-                    }
+                         }
 
-                }
+                     }
 
-            }
+                 }
 
-        }
+             }
+
+         }
 
 
-        
+
     }
 
     void ChangeSprite()

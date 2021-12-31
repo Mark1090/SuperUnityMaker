@@ -41,10 +41,10 @@ public class Maker : MonoBehaviour
     {
         playing = !playing;
         preview.enabled = !playing;
-        for (int i = 0; i < playingObjects.Length; i++)
-        {
-            playingObjects[i].SetActive(!playing);
-        }
+        //for (int i = 0; i < playingObjects.Length; i++)
+        //{
+            //playingObjects[i].SetActive(!playing);
+        //}
     }
 
     void Update()
@@ -80,7 +80,7 @@ public class Maker : MonoBehaviour
                 var c = Physics2D.CircleCast(pos, 0.4f, Vector2.zero);
                 if (c.collider != null)
                 {
-                    if (c.collider.gameObject.GetComponent<Maker_Tile>().id == 4)
+                    if (c.collider.gameObject.GetComponent<Maker_Tile>().id == 0)
                     {
                     c.collider.gameObject.GetComponent<Block_Changer>().mode = "none";
                     }

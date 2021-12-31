@@ -80,10 +80,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -103,7 +105,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 18
@@ -122,6 +124,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -592,9 +595,29 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Dirt_Tileset2_8: 6964019511076127379
+      Dirt_Tileset2_1: 5283635066106447425
+      Dirt_Tileset2_2: -8520860930155413140
+      Dirt_Tileset2_3: -6988260553808264809
+      Dirt_Tileset2_6: -3858149466439148497
+      Dirt_Tileset2_11: -5100568710001162537
+      Dirt_Tileset2_0: -2082400644048067664
+      Dirt_Tileset2_14: 1399390564771354125
+      Dirt_Tileset2_5: -7859264367338665654
+      Dirt_Tileset2_9: 5222336472053183950
+      Dirt_Tileset2_16: -6317837012425527488
+      Dirt_Tileset2_12: -4504968538363522342
+      Dirt_Tileset2_10: -1669257596033898825
+      Dirt_Tileset2_15: 2242137748642387617
+      Dirt_Tileset2_19: -4596793976556549534
+      Dirt_Tileset2_17: 7897331014798710224
+      Dirt_Tileset2_7: -5846854160232550083
+      Dirt_Tileset2_4: -7363936152825614335
+      Dirt_Tileset2_13: 8225240438580285045
+      Dirt_Tileset2_18: -7320028932223598975
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

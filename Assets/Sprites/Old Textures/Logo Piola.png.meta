@@ -65,10 +65,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -107,6 +109,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -472,9 +475,24 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Logo Piola_14: 8959982199120373552
+      Logo Piola_8: -4507831944003590617
+      Logo Piola_0: -2622459170540538279
+      Logo Piola_10: -3317854299287734362
+      Logo Piola_12: -8400087652777726415
+      Logo Piola_6: 3292834375474313044
+      Logo Piola_9: -3974677589819641438
+      Logo Piola_3: 7140637874966161422
+      Logo Piola_4: 8224789987265972422
+      Logo Piola_13: -2282486478053874306
+      Logo Piola_1: -7919131019981927767
+      Logo Piola_2: -6004237610195341455
+      Logo Piola_5: 5936211395905865416
+      Logo Piola_7: -3329458092945614326
+      Logo Piola_11: 1343655191692328080
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

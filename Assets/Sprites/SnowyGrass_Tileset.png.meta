@@ -80,10 +80,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -122,6 +124,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -592,9 +595,29 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      SnowyGrass_Tileset_1: -8130005818505812679
+      SnowyGrass_Tileset_18: -6909891430237851092
+      SnowyGrass_Tileset_0: -6393847754980308406
+      SnowyGrass_Tileset_4: 103127659646057313
+      SnowyGrass_Tileset_17: 1971817240847769315
+      SnowyGrass_Tileset_14: 3402485317242872096
+      SnowyGrass_Tileset_15: 1334907634835847546
+      SnowyGrass_Tileset_9: 3499739141650811077
+      SnowyGrass_Tileset_8: -2953097038139555628
+      SnowyGrass_Tileset_10: 7627751587880159459
+      SnowyGrass_Tileset_2: 3569487941683554436
+      SnowyGrass_Tileset_3: -6897439070980528718
+      SnowyGrass_Tileset_6: 416283234693248871
+      SnowyGrass_Tileset_16: -5580924922318161199
+      SnowyGrass_Tileset_5: -3311701574961756966
+      SnowyGrass_Tileset_19: 2384130591030002320
+      SnowyGrass_Tileset_11: -56869935595113445
+      SnowyGrass_Tileset_13: 412028609736156194
+      SnowyGrass_Tileset_12: 680319430159588253
+      SnowyGrass_Tileset_7: 7141798655636620920
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

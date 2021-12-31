@@ -65,10 +65,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -107,6 +109,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -472,9 +475,24 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      SUM_Logo_6: 8596784892655502385
+      SUM_Logo_14: -1005161182542433914
+      SUM_Logo_10: 7669029031775515144
+      SUM_Logo_13: -95795542022103255
+      SUM_Logo_7: 2452700566327382860
+      SUM_Logo_8: 6874702070018587670
+      SUM_Logo_9: 5222548259172385780
+      SUM_Logo_3: 4418991259046465334
+      SUM_Logo_2: -3264489788510208956
+      SUM_Logo_0: 4794439886745532490
+      SUM_Logo_12: 7630429222827897013
+      SUM_Logo_5: 4412821853081617951
+      SUM_Logo_11: 6824581412752524475
+      SUM_Logo_4: -4776415501526794830
+      SUM_Logo_1: -1402329830248197974
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
