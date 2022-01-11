@@ -7,6 +7,7 @@ public class BetterJump : MonoBehaviour
 	public float fallMultiplier = 2.5f;
 	public float lowJumpMultiplier = 2;
 	Rigidbody2D rb;
+	public Movement mv;
 
 	void Start () 
 	{
@@ -15,15 +16,15 @@ public class BetterJump : MonoBehaviour
 
 	public void ApplyBetterJump()
 	{
-		if (rb.velocity.y < 0) 
+		if (rb.velocity.y < 0.1f) 
 		{
 			rb.gravityScale = fallMultiplier;
 		} 
-		else if (rb.velocity.y > 0 && !InputManager.JumpButton) 
+		else if (rb.velocity.y > 0.1f && !InputManager.JumpButton) 
 		{
 			rb.gravityScale = lowJumpMultiplier;
 		} 
-		else 
+		else if (mv.IsGround)
 		{
 			rb.gravityScale = 1;
 		}	
