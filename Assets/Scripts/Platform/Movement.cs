@@ -10,6 +10,7 @@ public class Movement : MonoBehaviour
 	public float speed = 5;
 	public float jumpSpeed = 5;
 	public bool once = false;
+	public bool mainScreen;
 
 	[Header("GroundCheck")]
 	public Transform groundCheckPosition;
@@ -66,10 +67,13 @@ public class Movement : MonoBehaviour
 	{
         if (!Maker.playing)
         {
-			rb.simulated = false;
-			once = false;
+			if (!mainScreen)
+            {
+				rb.simulated = false;
+				once = false;
 
-			return;
+				return;
+			}
 		}
         else
         {
