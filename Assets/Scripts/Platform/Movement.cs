@@ -98,7 +98,10 @@ public class Movement : MonoBehaviour
 	{
         if (!Maker.playing)
         {
-			return;
+			if (!mainScreen)
+			{
+				return;
+			}
 		}
 
         if (jumpRequest) 
