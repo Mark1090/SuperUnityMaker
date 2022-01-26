@@ -9,6 +9,7 @@ public class MoveCamera : MonoBehaviour
     public float limit = 100;
     public GameObject player;
     public float offset;
+    public bool mainScreen;
     private Vector3 playerPosition;
     public float offsetSmoothing;
 
@@ -19,8 +20,11 @@ public class MoveCamera : MonoBehaviour
 
     void Update()
     {
-        if (!Maker.playing)
+        if (!mainScreen)
         {
+
+        if (!Maker.playing)
+        { 
             if (Input.GetKey(KeyCode.LeftArrow))
             {
                 if (this.transform.position.x >= -0.5)
@@ -37,6 +41,7 @@ public class MoveCamera : MonoBehaviour
                     this.transform.Translate(new Vector2(15f, 0f) * Time.deltaTime);
                 }
             }
+        }
         }
         else
         {
@@ -65,13 +70,15 @@ public class MoveCamera : MonoBehaviour
         {
             this.transform.TransformVector(new Vector3(-0.5f, 0f, 0f));
         }
-
+        if (!mainScreen)
+        {    
         if (managerScript.loading == true)
         {
             this.GetComponent<Camera>().orthographicSize = 1000.0f;
             managerScript.loading = false; 
             StartCoroutine(parent());
-        }        
+        }     
+        }
     }
 
     IEnumerator parent()
