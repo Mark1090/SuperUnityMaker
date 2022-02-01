@@ -190,6 +190,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fallMultiplier: 2.5
   lowJumpMultiplier: 2
+  mv: {fileID: 114837572701780754}
 --- !u!114 &114774355639802846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -216,5 +217,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   jumpSpeed: 5
+  once: 0
+  mainScreen: 0
   groundCheckPosition: {fileID: 4094845447437942}
   groundCheckSize: {x: 0, y: 0}
