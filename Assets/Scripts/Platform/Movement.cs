@@ -37,9 +37,9 @@ public class Movement : MonoBehaviour
 
 			if (cc.collider.gameObject == gameObject)
             {
-				return false;
+				return true;
 			}	
-			
+		
 			return true;
 		}
 	}

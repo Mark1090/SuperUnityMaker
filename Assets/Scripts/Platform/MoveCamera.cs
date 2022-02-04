@@ -6,7 +6,8 @@ public class MoveCamera : MonoBehaviour
 {
     public Maker makerScript;
     public LevelManager managerScript;
-    public float limit = 100;
+    public float xLimit = 100;
+    public float yLimit = 100;
     public GameObject player;
     public float offset;
     public bool mainScreen;
@@ -36,10 +37,33 @@ public class MoveCamera : MonoBehaviour
 
             if (Input.GetKey(KeyCode.RightArrow))
             {
-                if (this.transform.position.x <= limit)
+                if (this.transform.position.x <= xLimit)
                 {
                     this.transform.Translate(new Vector2(15f, 0f) * Time.deltaTime);
                 }
+            }
+
+            if (Input.GetKey(KeyCode.DownArrow))
+            {
+                if (this.transform.position.y > -0.74)
+                {
+                    this.transform.Translate(new Vector2(0f, -15f) * Time.deltaTime);
+                }
+                if (this.transform.position.y < -0.75)
+                    {
+                    this.transform.TransformVector(new Vector3(0f, -0.75f, 0f));
+                }
+
+                    
+            }
+
+            if (Input.GetKey(KeyCode.UpArrow))
+            {
+                if (this.transform.position.y <= yLimit)
+                {
+                this.transform.Translate(new Vector2(0f, 15f) * Time.deltaTime);
+                }
+                    
             }
         }
         }
