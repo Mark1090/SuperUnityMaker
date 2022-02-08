@@ -8,6 +8,7 @@ public class BetterJump : MonoBehaviour
 	public float lowJumpMultiplier = 2;
 	Rigidbody2D rb;
 	public Movement mv;
+	public bool IsJumping = false;
 
 	void Start () 
 	{
@@ -16,6 +17,8 @@ public class BetterJump : MonoBehaviour
 
 	public void ApplyBetterJump()
 	{
+		IsJumping = true;
+
 		if (rb.velocity.y < 0.1f) 
 		{
 			rb.gravityScale = fallMultiplier;
@@ -27,6 +30,7 @@ public class BetterJump : MonoBehaviour
 		else if (mv.IsGround)
 		{
 			rb.gravityScale = 1;
+			IsJumping = false;
 		}	
 	}
 }
