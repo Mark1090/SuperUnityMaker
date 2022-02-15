@@ -6493,7 +6493,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   makerScript: {fileID: 0}
   managerScript: {fileID: 0}
-  limit: 75
+  xLimit: 100
+  yLimit: 100
   player: {fileID: 475410608}
   offset: 1
   mainScreen: 1
@@ -8565,11 +8566,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 422373572}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 32, y: -1, z: -1}
+  m_LocalPosition: {x: 32, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1018188783}
-  m_RootOrder: 5
+  m_Father: {fileID: 856950877}
+  m_RootOrder: 112
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &422373574
 SpriteRenderer:
@@ -8863,7 +8864,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4014244547264486, guid: cbb0651332e7dd744b0292df95c6e397, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.31
+      value: -9
       objectReference: {fileID: 0}
     - target: {fileID: 4014244547264486, guid: cbb0651332e7dd744b0292df95c6e397, type: 3}
       propertyPath: m_LocalPosition.y
@@ -17828,6 +17829,7 @@ Transform:
   - {fileID: 2061814505}
   - {fileID: 1248689750}
   - {fileID: 95441086}
+  - {fileID: 422373573}
   m_Father: {fileID: 2120138551}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -19508,7 +19510,6 @@ Transform:
   - {fileID: 1334036586}
   - {fileID: 2126074042}
   - {fileID: 1390599110}
-  - {fileID: 422373573}
   m_Father: {fileID: 2120138551}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
