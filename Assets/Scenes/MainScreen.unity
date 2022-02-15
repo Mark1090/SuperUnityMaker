@@ -6493,7 +6493,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   makerScript: {fileID: 0}
   managerScript: {fileID: 0}
-  xLimit: 100
+  xLimit: 98
   yLimit: 100
   player: {fileID: 475410608}
   offset: 1
