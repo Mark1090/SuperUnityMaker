@@ -14,7 +14,7 @@ public class PowerUpBlock : MonoBehaviour
     {
         if (coll.gameObject.tag == "Player")
         {
-            if (coll.gameObject.GetComponent<Movement>().IsGround)
+            if (!coll.gameObject.GetComponent<Movement>().IsGround)
             {
                 Vector3 pos = transform.position + new Vector3(0, 0.5f, 0);
                 float angleDegrees = -angle * Mathf.Rad2Deg;

@@ -12,11 +12,37 @@ public class Movement : MonoBehaviour
 	public bool once = false;
 	public bool mainScreen;
 
+	[Header("GroundCheck")]
+	public Transform groundCheckPosition;
+	public Vector2 groundCheckSize;
+
     Vector3 initalPoint;
 	SpriteRenderer sr;
 	Rigidbody2D rb;
-	isJump bt;
+	BetterJump bt;
 
+	public bool IsGround
+	{
+		get
+		{
+			var cc = Physics2D.BoxCast(groundCheckPosition.position, 
+                                        groundCheckSize,
+                                        0, 
+                                        Vector2.zero); 
+
+	    	if (cc.collider == null)
+            {
+				return false;
+			}
+
+			if (cc.collider.gameObject == gameObject)
+            {
+				return true;
+			}	
+		
+			return true;
+		}
+	}
 		
 	void Start () 
 	{
@@ -103,7 +129,6 @@ public class Movement : MonoBehaviour
 			}			
 		}
 	}
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Spikes"))
