@@ -11,6 +11,7 @@ public class Movement : MonoBehaviour
 	public float jumpSpeed = 5;
 	public bool once = false;
 	public bool mainScreen;
+	public bool IsGround = true;
 
     Vector3 initalPoint;
 	SpriteRenderer sr;
@@ -29,17 +30,17 @@ public class Movement : MonoBehaviour
 	}
 	void OnDrawGizmosSelected()
 	{
-		if (!groundCheckPosition)
+		/*if (!groundCheckPosition)
         {
 			return;
 		}
-		Gizmos.DrawWireCube ((Vector3) groundCheckPosition.position, (Vector3)groundCheckSize);
+		Gizmos.DrawWireCube ((Vector3) groundCheckPosition.position, (Vector3)groundCheckSize);*/
 	}
 
 	bool ground;
 	void Update () 
 	{
-        if (!Maker.playing)
+   /*     if (!Maker.playing)
         {
 			if (!mainScreen)
             {
@@ -109,6 +110,6 @@ public class Movement : MonoBehaviour
         if (collision.CompareTag("Spikes"))
         {
             transform.position = initalPoint;
-        }
+        }*/
     }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BetterJump : MonoBehaviour
 {
-	public float fallMultiplier = 2.5f;
+/*	public float fallMultiplier = 2.5f;
 	public float lowJumpMultiplier = 2;
 	Rigidbody2D rb;
 	public Movement mv;
@@ -32,5 +32,5 @@ public class BetterJump : MonoBehaviour
 			rb.gravityScale = 1;
 			IsJumping = false;
 		}	
-	}
+	}*/
 }
