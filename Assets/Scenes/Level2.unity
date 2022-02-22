@@ -554,6 +554,11 @@ PrefabInstance:
       propertyPath: m_Simulated
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 50828694736697160, guid: cbb0651332e7dd744b0292df95c6e397,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 70596448294677920, guid: cbb0651332e7dd744b0292df95c6e397,
         type: 3}
       propertyPath: m_Size.x
