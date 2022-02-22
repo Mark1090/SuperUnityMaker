@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GoombaMovement : MonoBehaviour
+public class KoopaMovement : MonoBehaviour
 {
     Rigidbody2D rb;
     public float direction = 1;
@@ -16,10 +16,10 @@ public class GoombaMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        rb.velocity = new Vector3 ( direction * 3f, rb.velocity.y);	
+        rb.velocity = new Vector3 ( direction * 2f, rb.velocity.y);	
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D coll)
     {
        direction = direction * -1;
     }
