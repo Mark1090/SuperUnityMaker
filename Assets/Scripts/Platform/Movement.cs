@@ -15,14 +15,14 @@ public class Movement : MonoBehaviour
     Vector3 initalPoint;
 	SpriteRenderer sr;
 	Rigidbody2D rb;
-	isJump bt;
+	//isJump bt;
 
 		
 	void Start () 
 	{
 		sr = GetComponent<SpriteRenderer> ();
 		rb = GetComponent<Rigidbody2D> ();
-		bt = GetComponent<BetterJump> ();
+		//bt = GetComponent<BetterJump> ();
 
 		rb.freezeRotation = true;
         initalPoint = transform.position;
@@ -86,7 +86,7 @@ public class Movement : MonoBehaviour
 	
 		rb.velocity = new Vector3 (InputManager.HorizontalAxis * speed, rb.velocity.y);	
 
-		bt.ApplyBetterJump ();			
+		//bt.ApplyBetterJump ();			
 	}
 
 	void ManageFlip()
