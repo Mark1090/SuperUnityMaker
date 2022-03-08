@@ -6,7 +6,7 @@ public class KoopaMovement : MonoBehaviour
 {
     Rigidbody2D rb;
     public float direction = 1;
-    public KoopaShell 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,10 +17,7 @@ public class KoopaMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        rb.velocity = new Vector3 ( direction * 2f, rb.velocity.y);	
-        
-        if (coll.gameObject.tag=="Player")
-
+        rb.velocity = new Vector3(direction * 2f, rb.velocity.y);
     }
 
     void OnTriggerEnter2D(Collider2D coll)

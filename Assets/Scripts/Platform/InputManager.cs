@@ -39,4 +39,5 @@ public class InputManager : MonoBehaviour
 			return Input.GetAxis ("Horizontal");
 		}
 	}
+
 }

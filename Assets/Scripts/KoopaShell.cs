@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class KoopaShell : MonoBehaviour
 {
-    Rigidbody2D rb;
+    /*Rigidbody2D rb;
 
     // Start is called before the first frame update
     void Start()
@@ -21,9 +21,9 @@ public class KoopaShell : MonoBehaviour
     void OnTriggerEnter2D(Collider2D coll)
         {
         if(coll.gameObject.tag == "Player"){
-           direction1 = 2f;
+           direction = 2f;
 
        }
       }
-
+    */
 }

@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 114656197281747144}
   - component: {fileID: 114774355639802846}
   - component: {fileID: 114837572701780754}
+  - component: {fileID: 8297935743092709038}
   m_Layer: 0
   m_Name: Entity_Player
   m_TagString: Player
@@ -188,10 +189,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5403135e2c1b22499724624171f47f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fallMultiplier: 2.5
-  lowJumpMultiplier: 2
-  mv: {fileID: 114837572701780754}
-  IsJumping: 0
 --- !u!114 &114774355639802846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,5 +217,30 @@ MonoBehaviour:
   jumpSpeed: 5
   once: 0
   mainScreen: 0
-  groundCheckPosition: {fileID: 4094845447437942}
-  groundCheckSize: {x: 0, y: 0}
+  IsGround: 1
+--- !u!61 &8297935743092709038
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503140549746616}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0030550957, y: -0.64148736}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 0.24, y: 0.24}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.28519917, y: 0.16912127}
+  m_EdgeRadius: 0

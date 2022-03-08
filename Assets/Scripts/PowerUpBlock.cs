@@ -14,12 +14,17 @@ public class PowerUpBlock : MonoBehaviour
     {
         if (coll.gameObject.tag == "Player")
         {
-            if (coll.gameObject.GetComponent<Movement>().IsGround)
+            if (!coll.gameObject.GetComponent<Movement>().ground)
             {
-                Vector3 pos = transform.position + new Vector3(0, 0.5f, 0);
-                float angleDegrees = -angle * Mathf.Rad2Deg;
-                Quaternion rot = Quaternion.Euler(0, angleDegrees, 0);
-                Instantiate(Item, pos, rot);
+                if (numberOfObjects > 0)
+                {
+                    Vector3 pos = transform.position + new Vector3(0, 0.5f, 0);
+                    float angleDegrees = -angle * Mathf.Rad2Deg;
+                    Quaternion rot = Quaternion.Euler(0, angleDegrees, 0);
+                    Instantiate(Item, pos, rot);
+                    numberOfObjects = numberOfObjects - 1;
+                }
+                
             }
 
         }
