@@ -4,7 +4,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(SpriteRenderer))]
 [RequireComponent(typeof(Rigidbody2D))]
-public class Movement : MonoBehaviour 
+public class Movement : MonoBehaviour
 {
 	[Header("Control")]
 	public float speed = 5;
@@ -12,104 +12,140 @@ public class Movement : MonoBehaviour
 	public bool once = false;
 	public bool mainScreen;
 	public bool IsGround = true;
+	public bool ground = true;
 
-    Vector3 initalPoint;
+	Vector3 initalPoint;
 	SpriteRenderer sr;
 	Rigidbody2D rb;
-	//isJump bt;
 
-		
-	void Start () 
+
+	void Start()
 	{
-		sr = GetComponent<SpriteRenderer> ();
-		rb = GetComponent<Rigidbody2D> ();
-		//bt = GetComponent<BetterJump> ();
+		sr = GetComponent<SpriteRenderer>();
+		rb = GetComponent<Rigidbody2D>();
 
 		rb.freezeRotation = true;
-        initalPoint = transform.position;
+		initalPoint = transform.position;
 	}
-	void OnDrawGizmosSelected()
+	/*void OnDrawGizmosSelected()
 	{
-		/*if (!groundCheckPosition)
+		if (!groundCheckPosition)
         {
 			return;
 		}
-		Gizmos.DrawWireCube ((Vector3) groundCheckPosition.position, (Vector3)groundCheckSize);*/
+		Gizmos.DrawWireCube ((Vector3) groundCheckPosition.position, (Vector3)groundCheckSize);
+	}*/
+	void OnTriggerEnter2D(Collider2D collision)
+	{
+		if (collision.CompareTag("Spikes"))
+		{
+			transform.position = initalPoint;
+		}
+		ground = true;
 	}
 
-	bool ground;
-	void Update () 
+	void OnTriggerStay2D(Collider2D collision)
 	{
-   /*     if (!Maker.playing)
-        {
-			if (!mainScreen)
-            {
-				rb.simulated = false;
-				once = false;
+		ground = true;
+	}
 
+	void OnTriggerExit2D(Collider2D collision)
+	{
+		ground = false;
+
+	}
+
+
+	void Update()
+	{
+		if (!Maker.playing)
+		{
+			if (!mainScreen)
+			{
 				return;
 			}
 		}
-        else
+
+		ManageFlip();
+		ManageJump();
+
+		if ((ground) && (InputManager.JumpButtonPressed))
         {
-			rb.simulated = true;
-
-			if (once == false)
-			{
-				Vector3 newpos = new Vector3(-9.0f, -5.0f, 0.0f);
-				this.transform.position = newpos;
-				once = true;
-			}
+			rb.AddForce(Vector2.up * jumpSpeed, ForceMode2D.Impulse);
 		}
-        ground = IsGround;
-
-		ManageFlip ();
-		ManageJump ();
-    }
-
-
-	bool jumpRequest = false;
+		
+	}
 	void FixedUpdate()
 	{
-        if (!Maker.playing)
-        {
+		if (!Maker.playing)
+		{
 			if (!mainScreen)
 			{
 				return;
 			}
 		}
 
-        if (jumpRequest) 
+		rb.velocity = new Vector3(InputManager.HorizontalAxis * speed, rb.velocity.y);
+	}
+
+
+		/*     if (!Maker.playing)
+			 {
+				 if (!mainScreen)
+				 {
+					 rb.simulated = false;
+					 once = false;
+
+					 return;
+				 }
+			 }
+			 else
+			 {
+				 rb.simulated = true;
+
+				 if (once == false)
+				 {
+					 Vector3 newpos = new Vector3(-9.0f, -5.0f, 0.0f);
+					 this.transform.position = newpos;
+					 once = true;
+				 }
+			 }
+			 ground = IsGround;
+
+
+		 }
+
+
+		 bool jumpRequest = false;
+
+		 }*/
+
+		void ManageFlip()
+		 {
+			 if(InputManager.HorizontalAxis != 0)
+				 sr.flipX = InputManager.HorizontalAxis < 0;
+		 }
+
+		 void ManageJump()
+		 {		
+			 if (InputManager.JumpButtonPressed) {
+				 if (ground) {
+					 //jumpRequest = true;
+				 }			
+			 }
+		 }
+
+		 /*
+
+
+
+
+
+		 if (jumpRequest)
 		{
 			jumpRequest = false;
-			rb.AddForce (Vector2.up * jumpSpeed, ForceMode2D.Impulse);		
-		}
-	
-		rb.velocity = new Vector3 (InputManager.HorizontalAxis * speed, rb.velocity.y);	
+			rb.AddForce(Vector2.up * jumpSpeed, ForceMode2D.Impulse);
+		}*/
 
-		//bt.ApplyBetterJump ();			
-	}
 
-	void ManageFlip()
-	{
-		if(InputManager.HorizontalAxis != 0)
-			sr.flipX = InputManager.HorizontalAxis < 0;
-	}
-
-	void ManageJump()
-	{		
-		if (InputManager.JumpButtonPressed) {
-			if (ground) {
-                jumpRequest = true;
-			}			
-		}
-	}
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Spikes"))
-        {
-            transform.position = initalPoint;
-        }*/
-    }
 }

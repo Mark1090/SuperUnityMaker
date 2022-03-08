@@ -11,16 +11,18 @@ public class KoopaShell : MonoBehaviour
     public GameObject Minecraft;
 
    
+    /*Rigidbody2D rb;
+
     // Start is called before the first frame update
     void Start()
     {
     Minecraft.SetActive(false);
     rb = this.GetComponent<Rigidbody2D> ();
-    direction = 1f;
+    direction1 = 1f;
     }
 
     // Update is called once per frame
-    void fixedUpdate()
+    void Update()
     {
     if (Koopa == false){
     Minecraft.SetActive(true);
@@ -35,3 +37,5 @@ public class KoopaShell : MonoBehaviour
       }
       }}    
 
+    */
+}

@@ -11,7 +11,6 @@ public class KoopaMovement : MonoBehaviour
     public GameObject KoopaGO;
 
     // Start is called before the first frame update
-    
     void Start()
     {
     rb = this.GetComponent<Rigidbody2D> ();
@@ -19,24 +18,12 @@ public class KoopaMovement : MonoBehaviour
     }
 
     // Update is called once per frame
-
-    void OnTriggerEnter2D(Collider2D coll) 
-    {
-        
-        if(coll.gameObject.tag=="Shell") 
-        {
-        
-        }else{
-        direction = direction * -1;
-        }
-        if (coll.gameObject.tag=="Player")
-        {
-        Koopa = false;
-        }
-    }
-    
-
     void FixedUpdate()
+    {
+        rb.velocity = new Vector3(direction * 2f, rb.velocity.y);
+    }
+
+    void OnTriggerEnter2D(Collider2D coll)
     {
         rb.velocity = new Vector3 ( direction * 2f, rb.velocity.y);	
         if (Koopa == false){
@@ -44,4 +31,8 @@ public class KoopaMovement : MonoBehaviour
             Destroy(this.gameObject);
             }
     } 
+}
+    if (coll.gameObject.tag=="Player")
+       direction = direction * -1;
+    }
 }
