@@ -1180,11 +1180,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4014244547264486, guid: cbb0651332e7dd744b0292df95c6e397, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.08
+      value: 1.86
       objectReference: {fileID: 0}
     - target: {fileID: 4014244547264486, guid: cbb0651332e7dd744b0292df95c6e397, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.29
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 4014244547264486, guid: cbb0651332e7dd744b0292df95c6e397, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1615,47 +1615,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 8740562089847926331}
   m_PrefabAsset: {fileID: 0}
---- !u!61 &391404951
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 391404950}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.0042482615, y: -0.0042231083}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.008496, y: 1.0085464}
-  m_EdgeRadius: 0
---- !u!114 &391404952
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 391404950}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a28a4573f99e4094cab9097c5ad7244e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  direction: 1
-  gge: {fileID: 0}
-  Koopa: 1
 --- !u!4 &391404956 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6717772513135866918, guid: afcabb292272a4e4583a9bc1dbb64a66,
@@ -5266,6 +5225,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1594355793806031683, guid: afcabb292272a4e4583a9bc1dbb64a66,
+        type: 3}
+      propertyPath: Koopa
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1594355793806031683, guid: afcabb292272a4e4583a9bc1dbb64a66,
+        type: 3}
+      propertyPath: KoopaGO
+      value: 
+      objectReference: {fileID: 391404950}
+    - target: {fileID: 1594355793806031683, guid: afcabb292272a4e4583a9bc1dbb64a66,
+        type: 3}
+      propertyPath: Minecraft
+      value: 
+      objectReference: {fileID: 2134975017}
     - target: {fileID: 2242148924080392270, guid: afcabb292272a4e4583a9bc1dbb64a66,
         type: 3}
       propertyPath: m_Sprite
@@ -5337,6 +5311,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7138826459963888746, guid: afcabb292272a4e4583a9bc1dbb64a66,
+        type: 3}
+      propertyPath: KoopaGO
+      value: 
+      objectReference: {fileID: 391404950}
+    - target: {fileID: 7138826459963888746, guid: afcabb292272a4e4583a9bc1dbb64a66,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7519833609801343098, guid: afcabb292272a4e4583a9bc1dbb64a66,
         type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.size
@@ -5403,7 +5387,7 @@ PrefabInstance:
       value: -0.50278115
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 2251123610023475218, guid: afcabb292272a4e4583a9bc1dbb64a66, type: 3}
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: afcabb292272a4e4583a9bc1dbb64a66, type: 3}
 --- !u!1 &1823690322
 GameObject:
@@ -6444,45 +6428,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1809129132}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2134975018
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2134975017}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b4d02a9535937547beb6f861fbe8905, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  direction: 0
---- !u!61 &2134975019
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2134975017}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.0042482615, y: -0.0042231083}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.008496, y: 1.0085464}
-  m_EdgeRadius: 0
 --- !u!4 &2134975024 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6717772513135866918, guid: afcabb292272a4e4583a9bc1dbb64a66,
@@ -6565,6 +6510,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1594355793806031683, guid: afcabb292272a4e4583a9bc1dbb64a66,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6313777824732272686, guid: afcabb292272a4e4583a9bc1dbb64a66,
         type: 3}
       propertyPath: m_Name
@@ -6625,6 +6575,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7138826459963888746, guid: afcabb292272a4e4583a9bc1dbb64a66,
+        type: 3}
+      propertyPath: Koopa
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7138826459963888746, guid: afcabb292272a4e4583a9bc1dbb64a66,
+        type: 3}
+      propertyPath: KoopaGO
+      value: 
+      objectReference: {fileID: 2134975017}
     - target: {fileID: 7519833609801343098, guid: afcabb292272a4e4583a9bc1dbb64a66,
         type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.size
@@ -6690,6 +6650,5 @@ PrefabInstance:
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[5].y
       value: -0.50278115
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 2251123610023475218, guid: afcabb292272a4e4583a9bc1dbb64a66, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afcabb292272a4e4583a9bc1dbb64a66, type: 3}
