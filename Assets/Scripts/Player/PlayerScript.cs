@@ -4,7 +4,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(SpriteRenderer))]
 [RequireComponent(typeof(Rigidbody2D))]
-public class Movement : MonoBehaviour
+public class PlayerScript : MonoBehaviour
 {
 	[Header("Control")]
 	public float speed = 5;
@@ -13,6 +13,9 @@ public class Movement : MonoBehaviour
 	public bool mainScreen;
 	public bool IsGround = true;
 	public bool ground = true;
+	public int PowerUp = 0;
+	public Sprite image;
+	private SpriteRenderer spriteRenderer;
 
 	Vector3 initalPoint;
 	SpriteRenderer sr;
@@ -26,15 +29,9 @@ public class Movement : MonoBehaviour
 
 		rb.freezeRotation = true;
 		initalPoint = transform.position;
+		spriteRenderer = this.GetComponent<SpriteRenderer>();
 	}
-	/*void OnDrawGizmosSelected()
-	{
-		if (!groundCheckPosition)
-        {
-			return;
-		}
-		Gizmos.DrawWireCube ((Vector3) groundCheckPosition.position, (Vector3)groundCheckSize);
-	}*/
+	
 	void OnTriggerEnter2D(Collider2D collision)
 	{
 		if (collision.CompareTag("Spikes"))
@@ -58,6 +55,9 @@ public class Movement : MonoBehaviour
 
 	void Update()
 	{
+		if (PowerUp == 1)
+			spriteRenderer.sprite = image;
+
 		if (!Maker.playing)
 		{
 			if (!mainScreen)
@@ -73,8 +73,28 @@ public class Movement : MonoBehaviour
         {
 			rb.AddForce(Vector2.up * jumpSpeed, ForceMode2D.Impulse);
 		}
-		
+        if (!Maker.playing)
+		{
+			if (!mainScreen)
+			{
+				rb.simulated = false;
+				once = false;
+				return;
+			}
+		}
+		else
+		{
+		rb.simulated = true;
+
+			if (once == false)
+			{
+				Vector3 newpos = new Vector3(-9.0f, -5.0f, 0.0f);
+				this.transform.position = newpos;
+				once = true;
+			}
+		}
 	}
+
 	void FixedUpdate()
 	{
 		if (!Maker.playing)
@@ -89,63 +109,36 @@ public class Movement : MonoBehaviour
 	}
 
 
-		/*     if (!Maker.playing)
-			 {
-				 if (!mainScreen)
-				 {
-					 rb.simulated = false;
-					 once = false;
+	void ManageFlip()
+	{
+		if (InputManager.HorizontalAxis != 0)
+			sr.flipX = InputManager.HorizontalAxis < 0;
+	}
 
-					 return;
-				 }
-			 }
-			 else
-			 {
-				 rb.simulated = true;
-
-				 if (once == false)
-				 {
-					 Vector3 newpos = new Vector3(-9.0f, -5.0f, 0.0f);
-					 this.transform.position = newpos;
-					 once = true;
-				 }
-			 }
-			 ground = IsGround;
-
-
-		 }
-
-
-		 bool jumpRequest = false;
-
-		 }*/
-
-		void ManageFlip()
-		 {
-			 if(InputManager.HorizontalAxis != 0)
-				 sr.flipX = InputManager.HorizontalAxis < 0;
-		 }
-
-		 void ManageJump()
-		 {		
-			 if (InputManager.JumpButtonPressed) {
-				 if (ground) {
-					 //jumpRequest = true;
-				 }			
-			 }
-		 }
-
-		 /*
-
-
-
-
-
-		 if (jumpRequest)
+	void ManageJump()
+	{
+		if (InputManager.JumpButtonPressed)
 		{
-			jumpRequest = false;
-			rb.AddForce(Vector2.up * jumpSpeed, ForceMode2D.Impulse);
-		}*/
+			if (ground)
+			{
+				//jumpRequest = true;
+			}
+		}
+	}
+
+
+
+	/*
+
+
+
+
+
+	if (jumpRequest)
+   {
+	   jumpRequest = false;
+	   rb.AddForce(Vector2.up * jumpSpeed, ForceMode2D.Impulse);
+   }*/
 
 
 }

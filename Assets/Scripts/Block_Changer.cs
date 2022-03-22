@@ -104,9 +104,20 @@ public class Block_Changer : MonoBehaviour
     }
 
     void Update()
-    {
+    {   if (Maker.playing == true)
+        {
+            Up.GetComponent<Collider2D>().enabled = false;
+            Down.GetComponent<Collider2D>().enabled = false;
+            Left.GetComponent<Collider2D>().enabled = false;
+            Right.GetComponent<Collider2D>().enabled = false;
+        }
+
         if((OutOfRender == false) && (Maker.playing == false))
-        { 
+        {
+            Up.GetComponent<Collider2D>().enabled = true;
+            Down.GetComponent<Collider2D>().enabled = true;
+            Left.GetComponent<Collider2D>().enabled = true;
+            Right.GetComponent<Collider2D>().enabled = true;
 
             if ((UpBlockCheck.Changes == true) || (DownBlockCheck.Changes == true) || (LeftBlockCheck.Changes == true) || (RightBlockCheck.Changes == true))
             {

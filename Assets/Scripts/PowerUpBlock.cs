@@ -14,7 +14,7 @@ public class PowerUpBlock : MonoBehaviour
     {
         if (coll.gameObject.tag == "Player")
         {
-            if (!coll.gameObject.GetComponent<Movement>().ground)
+            if (!coll.gameObject.GetComponent<PlayerScript>().ground)
             {
                 if (numberOfObjects > 0)
                 {
