@@ -18,11 +18,15 @@ public class PowerUpBlock : MonoBehaviour
             {
                 if (numberOfObjects > 0)
                 {
-                    Vector3 pos = transform.position + new Vector3(0, 0.5f, 0);
-                    float angleDegrees = -angle * Mathf.Rad2Deg;
-                    Quaternion rot = Quaternion.Euler(0, angleDegrees, 0);
-                    Instantiate(Item, pos, rot);
-                    numberOfObjects = numberOfObjects - 1;
+                    if(coll.gameObject.tag == "Player")
+                    {
+                        Vector3 pos = transform.position + new Vector3(0, 0.5f, 0);
+                        float angleDegrees = -angle * Mathf.Rad2Deg;
+                        Quaternion rot = Quaternion.Euler(0, angleDegrees, 0);
+                        Instantiate(Item, pos, rot);
+                        numberOfObjects = numberOfObjects - 1;
+                    }
+
                 }
                 
             }
