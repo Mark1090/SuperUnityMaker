@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcd79a61dabe5c5469a840c9d41dfdcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  direction: 1
+  direction: -1
 --- !u!70 &6570880889409446312
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
