@@ -222,7 +222,7 @@ MonoBehaviour:
   IsGround: 1
   ground: 1
   PowerUp: 0
-  image: {fileID: 0}
+  image: {fileID: 5977567315343610022, guid: 89503280883b7a84481fe388d3685699, type: 3}
 --- !u!61 &8297935743092709038
 BoxCollider2D:
   m_ObjectHideFlags: 0
