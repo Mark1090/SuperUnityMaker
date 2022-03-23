@@ -119,9 +119,11 @@ public class Block_Changer : MonoBehaviour
             Left.GetComponent<Collider2D>().enabled = true;
             Right.GetComponent<Collider2D>().enabled = true;
 
+            Detect();
+
             if ((UpBlockCheck.Changes == true) || (DownBlockCheck.Changes == true) || (LeftBlockCheck.Changes == true) || (RightBlockCheck.Changes == true))
             {
-                Detect();
+                
             }
 
             if (UpBlockCheck.ObjectScript.mode == "none")
