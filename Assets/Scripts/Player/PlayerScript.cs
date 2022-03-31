@@ -111,8 +111,12 @@ public class PlayerScript : MonoBehaviour
 
 	void ManageFlip()
 	{
-		if (InputManager.HorizontalAxis != 0)
+		if (InputManager.HorizontalAxis == 0)
 			sr.flipX = InputManager.HorizontalAxis < 0;
+
+		if (InputManager.HorizontalAxis != 0)
+			sr.flipX = InputManager.HorizontalAxis > 0;
+
 	}
 
 	void ManageJump()
