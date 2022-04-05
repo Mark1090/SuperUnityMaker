@@ -11,7 +11,12 @@ GameObject:
   - component: {fileID: 2807314936257935345}
   - component: {fileID: 2807314936257935358}
   - component: {fileID: 1236220233261857442}
+<<<<<<< Updated upstream
   - component: {fileID: 5449643812434913010}
+=======
+  - component: {fileID: -3117585806210916560}
+  - component: {fileID: -1518958666216916128}
+>>>>>>> Stashed changes
   m_Layer: 0
   m_Name: Flying-penis_2
   m_TagString: Untagged
@@ -115,7 +120,32 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+<<<<<<< Updated upstream
 --- !u!251 &5449643812434913010
+=======
+--- !u!50 &-3117585806210916560
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2807314936257935356}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
+--- !u!251 &-1518958666216916128
+>>>>>>> Stashed changes
 PlatformEffector2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -130,7 +160,14 @@ PlatformEffector2D:
   m_RotationalOffset: 0
   m_UseOneWay: 1
   m_UseOneWayGrouping: 0
+<<<<<<< Updated upstream
   m_SurfaceArc: 190
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 0
+=======
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
+>>>>>>> Stashed changes
