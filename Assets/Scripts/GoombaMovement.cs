@@ -16,7 +16,7 @@ public class GoombaMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        rb.velocity = new Vector3 ( direction * 3f, rb.velocity.y);	
+        rb.velocity = new Vector3 ( direction * 3f, rb.velocity.y);
     }
 
     void OnTriggerEnter2D(Collider2D collision)
