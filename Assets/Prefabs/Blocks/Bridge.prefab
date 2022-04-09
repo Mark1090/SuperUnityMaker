@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1236220233261857442}
   - component: {fileID: 5449643812434913010}
   m_Layer: 0
-  m_Name: Flying-penis_2
+  m_Name: Bridge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
