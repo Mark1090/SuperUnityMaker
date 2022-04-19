@@ -6,6 +6,8 @@ public class UI_Manager : MonoBehaviour
 {
     public static Maker mk;
     public GameObject Settings;
+    public GameObject BlockSelec;
+    public GameObject CoinUI;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,9 +17,17 @@ public class UI_Manager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (mk.playing)
+        if (Maker.playing)
         {
-            Settings.setActive(false);
+            Settings.SetActive(false);
+            BlockSelec.SetActive(false);
+            CoinUI.SetActive(true);
+        }
+        else
+        {
+            Settings.SetActive(true);
+            BlockSelec.SetActive(true);
+            CoinUI.SetActive(false);
         }
     }
 }
