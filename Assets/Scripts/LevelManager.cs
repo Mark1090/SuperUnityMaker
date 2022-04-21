@@ -29,6 +29,7 @@ public class LevelManager : MonoBehaviour {
     private string level_name;
     public Maker_Tile[] makerTilePrefabs;
     private string level;
+    private string levelTEMP;
     public Transform parentGameObject;
     public GameObject parentGameObject2;
     public Maker MakerScript;
@@ -49,11 +50,18 @@ public class LevelManager : MonoBehaviour {
         {
             Directory.CreateDirectory(path);
         }
+
+        var pathTemp = (@"C:\Levels\Temp\");
+        if (!Directory.Exists(pathTemp))
+        {
+            Directory.CreateDirectory(pathTemp);
+        }
     }
 
     void Update()
     {
         level = (@"C:\Levels\" + level_name + @".uml");
+        levelTEMP = (@"C:\Levels\Temp\Current.uml");
     }
 
     public void Save()
@@ -105,6 +113,67 @@ public class LevelManager : MonoBehaviour {
         Debug.Log("Level Loaded");
     }
 
+    void Level()
+    {
+        if (Maker.playing)
+        {
+            SaveTemp();
+        }
+        else
+        {
+            LoadTemp();
+        }
+    }
+
+    public void SaveTemp()
+    {
+        makerTiles = GameObject.FindObjectsOfType<Maker_Tile>();
+        Tile[] t = new Tile[makerTiles.Length];
+        for (int i = 0; i < t.Length; i++)
+        {
+            t[i] = new Tile(makerTiles[i].transform.position.x,
+                            makerTiles[i].transform.position.y,
+                            makerTiles[i].transform.position.z,
+                            makerTiles[i].id);
+        }
+
+        IFormatter formatter = new BinaryFormatter();
+        Stream stream = new FileStream(levelTEMP,
+                                     FileMode.Create,
+                                     FileAccess.Write,
+                                     FileShare.None);
+        formatter.Serialize(stream, t);
+        stream.Close();
+        Debug.Log("TEMPLevel Saved");
+    }
+
+    public void LoadTemp()
+    {
+        loading = true;
+        makerTiles = GameObject.FindObjectsOfType<Maker_Tile>();
+        foreach (var i in makerTiles)
+        {
+            Destroy(i.gameObject);
+        }
+
+        IFormatter formatter = new BinaryFormatter();
+        Stream stream = new FileStream(levelTEMP,
+                                      FileMode.Open,
+                                      FileAccess.Read,
+                                      FileShare.Read);
+        var obj = (Tile[])formatter.Deserialize(stream);
+        stream.Close();
+
+        for (int i = 0; i < obj.Length; i++)
+        {
+            Instantiate(makerTilePrefabs[obj[i].id],
+                new Vector3(obj[i].x, obj[i].y, obj[i].z), Quaternion.identity, parentGameObject);
+            MakerScript.Counter[MakerScript.id] = obj[i].id;
+        }
+        StartCoroutine(parent());
+        parentGameObject2.SetActive(false);
+        Debug.Log("TEMPLevel Loaded");
+    }
     IEnumerator parent()
     {
         yield return new WaitForEndOfFrame();

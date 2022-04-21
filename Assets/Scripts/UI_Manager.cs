@@ -1,13 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UI_Manager : MonoBehaviour
 {
-    public static Maker mk;
+    public Maker mk;
+    public Coin_Manager CM;
     public GameObject Settings;
     public GameObject BlockSelec;
     public GameObject CoinUI;
+    public Text CoinTXT;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +31,9 @@ public class UI_Manager : MonoBehaviour
             Settings.SetActive(true);
             BlockSelec.SetActive(true);
             CoinUI.SetActive(false);
+            Coin_Manager.Coins = 0;
         }
+
+        CoinTXT.text = Coin_Manager.Coins.ToString();
     }
 }

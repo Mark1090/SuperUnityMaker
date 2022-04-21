@@ -41,6 +41,7 @@ public class Maker : MonoBehaviour
     {
         playing = !playing;
         preview.enabled = !playing;
+
         //for (int i = 0; i < playingObjects.Length; i++)
         //{
             //playingObjects[i].SetActive(!playing);

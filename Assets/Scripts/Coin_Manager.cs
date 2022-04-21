@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class Coin_Manager : MonoBehaviour
 {
-    public int Coins;
+    public static int Coins;
+
     void OnTriggerEnter2D(Collider2D coll)
     {
         if (coll.gameObject.tag == "Player")
         {
-            Coins++;
             Destroy(this.gameObject);
+            Coins++;
         }
     }
 }
