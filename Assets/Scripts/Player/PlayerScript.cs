@@ -36,18 +36,6 @@ public class PlayerScript : MonoBehaviour
 		{
 			transform.position = initalPoint;
 		}
-		ground = true;
-	}
-
-	void OnTriggerStay2D(Collider2D collision)
-	{
-		ground = true;
-	}
-
-	void OnTriggerExit2D(Collider2D collision)
-	{
-		ground = false;
-
 	}
 
 

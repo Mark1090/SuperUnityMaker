@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BrickBlock_Manager : MonoBehaviour
 {
+    public GameObject Block;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,11 +23,7 @@ public class BrickBlock_Manager : MonoBehaviour
         {
             if (!coll.gameObject.GetComponent<PlayerScript>().ground)
             {
-                if (coll.gameObject.tag == "Player")
-                {
-                    Destroy(this.gameObject);
-                }
-
+                Destroy(Block);
             }
 
         }
