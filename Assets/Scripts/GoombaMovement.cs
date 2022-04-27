@@ -6,6 +6,8 @@ public class GoombaMovement : MonoBehaviour
 {
     Rigidbody2D rb;
     public float direction = 1;
+    public float velocityrobux = 3f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +18,7 @@ public class GoombaMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        rb.velocity = new Vector3 ( direction * 3f, rb.velocity.y);
+        rb.velocity = new Vector3 ( direction * velocityrobux, rb.velocity.y);
     }
 
     void OnTriggerEnter2D(Collider2D coll)
