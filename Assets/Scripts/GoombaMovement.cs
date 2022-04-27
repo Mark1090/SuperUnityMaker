@@ -19,8 +19,11 @@ public class GoombaMovement : MonoBehaviour
         rb.velocity = new Vector3 ( direction * 3f, rb.velocity.y);
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D coll)
     {
-       direction = direction * -1;
+        direction = direction * -1;
+        if (coll.gameObject.tag == "Mushrooms")
+                direction = direction * -1;
+
     }
 }
