@@ -72,7 +72,7 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0.5}
     oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
@@ -81,11 +81,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.16400981, y: -0.038934708}
-      - {x: 0.019255877, y: 0.16496134}
-      - {x: -0.1281814, y: -0.037749648}
-      - {x: -0.28594637, y: -0.5006995}
-      - {x: 0.33160174, y: -0.50278115}
+    - - {x: 0.9473462, y: -0.026790142}
+      - {x: 0.49897352, y: 0.38356686}
+      - {x: 0.03577271, y: -0.031677604}
+      - {x: 0.12697512, y: -0.494627}
+      - {x: 0.8841879, y: -0.4906361}
 --- !u!212 &6927126577446566966
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -126,7 +126,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7219250207309677472, guid: 89503280883b7a84481fe388d3685699,
+  m_Sprite: {fileID: -3605285236067844410, guid: 4c9f6442b8e5d18419dca2bfae57b326,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -151,6 +151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: 0
+  velocityrobux: 3
 --- !u!61 &6927126577446566965
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -167,7 +168,7 @@ BoxCollider2D:
   m_Offset: {x: 0.038994074, y: -0.2718687}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0.5}
     oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
