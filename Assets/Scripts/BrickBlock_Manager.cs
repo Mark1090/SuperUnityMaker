@@ -5,28 +5,52 @@ using UnityEngine;
 public class BrickBlock_Manager : MonoBehaviour
 {
     public GameObject Block;
-    // Start is called before the first frame update
+    public Renderer rend;
+
+    ParticleSystem system
+    {
+        get
+        {
+            if (_CachedSystem == null)
+                _CachedSystem = GetComponent<ParticleSystem>();
+            return _CachedSystem;
+        }
+    }
+    private ParticleSystem _CachedSystem;
+
+    public Rect windowRect = new Rect(0, 0, 300, 120);
+
+    public bool includeChildren = true;
+
     void Start()
     {
-        
+        rend = GetComponent<Renderer>();
+        rend.enabled = true;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+ 
     void OnTriggerEnter2D(Collider2D coll)
     {
         if (coll.gameObject.tag == "Player")
         {
             if (!coll.gameObject.GetComponent<PlayerScript>().ground)
             {
-                Destroy(Block);
+                Block.GetComponent<SpriteRenderer>().enabled = false;
+                system.Play(includeChildren);
+                StartCoroutine(coroutine());
             }
 
         }
 
+    }
+
+    IEnumerator coroutine()
+    {
+        yield return new WaitForEndOfFrame();
+        yield return new WaitForEndOfFrame();
+        yield return new WaitForEndOfFrame();
+        yield return new WaitForEndOfFrame();
+        Block.GetComponent<Collider2D>().enabled = false;
+        yield return new WaitForSeconds(1);
+        Destroy(Block);
     }
 }
