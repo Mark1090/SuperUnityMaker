@@ -5,7 +5,7 @@ using UnityEngine;
 public class GoombaMovement : MonoBehaviour
 {
     Rigidbody2D rb;
-    public float direction = 1;
+    public float direction = 1f;
     public float velocityrobux = 3f;
 
     // Start is called before the first frame update
