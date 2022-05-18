@@ -80,10 +80,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -122,6 +124,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -580,9 +583,29 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Lean_Block_8: -5710618675143915863
+      Lean_Block_17: 101294994018606224
+      Lean_Block_12: -7643700113962671476
+      Lean_Block_5: -882591716392951315
+      Lean_Block_9: -5140312469573225523
+      Lean_Block_16: -635739099601080506
+      Lean_Block_14: -1102886937247002440
+      Lean_Block_7: 5540551110192070902
+      Lean_Block_3: -3367536892901250284
+      Lean_Block_19: 7534445747995669613
+      Lean_Block_11: 5042396952931397229
+      Lean_Block_1: 1174610391412406478
+      Lean_Block_15: -8717948812895924956
+      Lean_Block_4: 3290043534168318152
+      Lean_Block_18: 9158947886963595510
+      Lean_Block_2: 1051272400718742784
+      Lean_Block_6: -8847494754230613116
+      Lean_Block_13: 8224162876970642588
+      Lean_Block_0: -1825665410205638804
+      Lean_Block_10: 6958037414779507261
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

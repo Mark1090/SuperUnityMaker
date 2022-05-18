@@ -92,10 +92,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -134,6 +136,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -688,9 +691,33 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Changing_Blocks_7: -8715519501611101624
+      Changing_Blocks_8: -8291927662648622530
+      Changing_Blocks_20: 2309127029653517613
+      Changing_Blocks_4: 2295238509109049054
+      Changing_Blocks_21: -5935679433537247796
+      Changing_Blocks_22: 4140882228705271200
+      Changing_Blocks_23: -7766656983514841888
+      Changing_Blocks_1: 7775603015692889044
+      Changing_Blocks_15: 2602456739818953099
+      Changing_Blocks_10: 6419834993032336680
+      Changing_Blocks_11: 3938756216596469698
+      Changing_Blocks_9: -6348516492076143835
+      Changing_Blocks_13: -540131098926131938
+      Changing_Blocks_2: -3285841239470588536
+      Changing_Blocks_5: -7051259642585400627
+      Changing_Blocks_17: 4901916208912804564
+      Changing_Blocks_6: 8392023492227088092
+      Changing_Blocks_19: 5908381372962867542
+      Changing_Blocks_3: 7161973767825640506
+      Changing_Blocks_12: 7619784696018802442
+      Changing_Blocks_0: 8486568368592733256
+      Changing_Blocks_14: 5236809038040902761
+      Changing_Blocks_16: -2900636233573797848
+      Changing_Blocks_18: 8116755173026519257
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

@@ -80,10 +80,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -122,6 +124,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -580,9 +583,29 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Lean_Tileset2_6: 7895546810401578924
+      Lean_Tileset2_13: -2532536542889344905
+      Lean_Tileset2_9: -7764189486273218747
+      Lean_Tileset2_10: -1752535098272207149
+      Lean_Tileset2_3: -4478212223305550564
+      Lean_Tileset2_5: -2134636476743112910
+      Lean_Tileset2_18: 1375627711234548059
+      Lean_Tileset2_1: 2106475542406469443
+      Lean_Tileset2_11: 1961031562180471221
+      Lean_Tileset2_14: 4787084912374913926
+      Lean_Tileset2_17: 8438635111893287787
+      Lean_Tileset2_16: 5159238492367655859
+      Lean_Tileset2_7: -4557578071906760956
+      Lean_Tileset2_0: 7787141308609605988
+      Lean_Tileset2_12: 4744374311426230639
+      Lean_Tileset2_19: 6683339603061931300
+      Lean_Tileset2_8: 7004276764238723804
+      Lean_Tileset2_15: -2513622833341237036
+      Lean_Tileset2_2: 6365410189951872888
+      Lean_Tileset2_4: -1065548247320824593
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
