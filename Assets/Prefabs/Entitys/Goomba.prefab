@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6521979505229367130}
   m_Layer: 0
   m_Name: Goomba
-  m_TagString: Untagged
+  m_TagString: Spikes
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,7 +98,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 595723148686090463, guid: bbc025a856bbc52459f23d5a630beba5, type: 3}
+  m_Sprite: {fileID: 3443649785056416194, guid: 89503280883b7a84481fe388d3685699,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
