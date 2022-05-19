@@ -161,10 +161,10 @@ MonoBehaviour:
   additionalRaycastsPerSide: 1
   groundSpeed: 8
   timeToGroundSpeed: 0.1
-  groundStopDistance: 0.333
+  groundStopDistance: 0.1
   airSpeed: 5
   changeDirectionInAir: 1
-  timeToAirSpeed: 0.2
+  timeToAirSpeed: 0
   airStopDistance: 2
   fallSpeed: 16
   gravityMultiplier: 4
@@ -199,9 +199,9 @@ MonoBehaviour:
   wallInteractionCooldown: 0.1
   wallInteractionThreshold: 0.5
   enableDashes: 1
-  dashDistance: 3
+  dashDistance: 2
   dashDuration: 0.2
-  dashCooldown: 0.75
+  dashCooldown: 0.5
   dashEasingFunction: 1
   endDashNoGravityDuration: 0.1
   movingPlatformDebug: 0
