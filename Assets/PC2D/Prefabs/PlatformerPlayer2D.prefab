@@ -148,39 +148,64 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d522286c13b9ff41b33ba3ff16074d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxGroundSpeed: 8
-  timeToMaxGroundSpeed: 0.1
+  staticEnvLayerMask:
+    serializedVersion: 2
+    m_Bits: 8
+  envCheckDistance: 0.02
+  minDistanceFromEnv: 0.01
+  numOfIterations: 2
+  enableOneWayPlatforms: 1
+  movingPlatformLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  additionalRaycastsPerSide: 1
+  groundSpeed: 8
+  timeToGroundSpeed: 0.1
   groundStopDistance: 0.333
-  maxAirSpeed: 5
-  timeToMaxAirSpeed: 0.2
+  airSpeed: 5
+  changeDirectionInAir: 1
+  timeToAirSpeed: 0.2
   airStopDistance: 2
-  maxFallSpeed: 15
-  maxFastFallSpeed: 20
+  fallSpeed: 16
+  gravityMultiplier: 4
+  fastFallSpeed: 32
   fastFallGravityMultiplier: 1.5
-  preserveHorizontalMomentumOnLanding: 1
-  baseJumpHeight: 2.5
+  jumpHeight: 1.5
   extraJumpHeight: 0.5
-  allowDoubleJump: 1
-  allowWallJump: 1
+  numOfAirJumps: 1
+  jumpWindowWhenFalling: 0.2
+  jumpWindowWhenActivated: 0.2
+  enableSlopes: 1
+  angleAllowedForMoving: 50
+  minimumSpeedToMoveUpSlipperySlope: 7.5
+  changeSpeedOnSlopes: 1
+  speedMultiplierOnSlope: 0.75
+  stickOnGround: 1
+  distanceToCheckToStick: 0.4
+  enableWallJumps: 1
   wallJumpMultiplier: 1.35
-  allowWallCling: 1
-  wallClingDuration: 1
-  allowWallSlide: 1
+  wallJumpAngle: 70
+  enableWallSticks: 1
+  wallSticksDuration: 1
+  enableWallSlides: 1
   wallSlideSpeed: 1
-  allowCornerGrab: 1
-  cornerJumpMultiplier: 1
+  timeToWallSlideSpeed: 3
+  enableCornerGrabs: 1
   cornerGrabDuration: 1
+  cornerJumpMultiplier: 1
   cornerDistanceCheck: 0.2
-  allowDash: 1
-  dashCooldown: 0.75
+  cornerValidSize: 0.2
+  ignoreMovementAfterJump: 0.2
+  wallInteractionCooldown: 0.1
+  wallInteractionThreshold: 0.5
+  enableDashes: 1
   dashDistance: 3
   dashDuration: 0.2
+  dashCooldown: 0.75
   dashEasingFunction: 1
-  wallInteractionThreshold: 0.5
-  checkDistance: 0.05
-  checkMask:
-    serializedVersion: 2
-    m_Bits: 264
+  endDashNoGravityDuration: 0.1
+  movingPlatformDebug: 0
+  iterationDebug: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
