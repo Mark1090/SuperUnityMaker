@@ -11,6 +11,7 @@ public class UI_Manager : MonoBehaviour
     public GameObject BlockSelec;
     public GameObject CoinUI;
     public Text CoinTXT;
+    public bool ForcePlaying;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +21,7 @@ public class UI_Manager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Maker.playing)
+        if (Maker.playing || ForcePlaying)
         {
             Settings.SetActive(false);
             BlockSelec.SetActive(false);

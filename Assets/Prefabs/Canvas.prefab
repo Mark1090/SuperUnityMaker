@@ -1671,6 +1671,7 @@ MonoBehaviour:
   BlockSelec: {fileID: 1021956820830730377}
   CoinUI: {fileID: 6494938768142864150}
   CoinTXT: {fileID: 8566026757841807757}
+  ForcePlaying: 0
 --- !u!1 &1911709372171438319
 GameObject:
   m_ObjectHideFlags: 0

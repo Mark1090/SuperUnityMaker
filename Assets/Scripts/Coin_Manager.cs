@@ -10,8 +10,16 @@ public class Coin_Manager : MonoBehaviour
     {
         if (coll.gameObject.tag == "Player")
         {
-            Destroy(this.gameObject);
             Coins++;
+            StartCoroutine(Action());
+            Destroy(this.gameObject);
         }
+    }
+
+    IEnumerator Action()
+    {
+        Coins++;
+        yield return new WaitForEndOfFrame();
+        Destroy(this.gameObject);
     }
 }

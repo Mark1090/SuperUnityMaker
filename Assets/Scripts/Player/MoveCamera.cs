@@ -13,7 +13,7 @@ public class MoveCamera : MonoBehaviour
     public bool mainScreen;
     private Vector3 playerPosition;
     public float offsetSmoothing;
-
+    public bool CanY;
     void Start()
     {
         
@@ -84,6 +84,11 @@ public class MoveCamera : MonoBehaviour
                 else if (player.transform.position.x < 0)
                 {
                     playerPosition = new Vector3(-0.5f, playerPosition.y, playerPosition.z);
+                    transform.position = Vector3.Lerp(transform.position, playerPosition, offsetSmoothing * Time.deltaTime);
+                }
+                if (CanY)
+                {
+                    playerPosition = new Vector3(playerPosition.x, playerPosition.y, playerPosition.z);
                     transform.position = Vector3.Lerp(transform.position, playerPosition, offsetSmoothing * Time.deltaTime);
                 }
             }
