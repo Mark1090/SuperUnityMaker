@@ -35,10 +35,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/YourLevels.unity
     guid: f615e2ff065fa6b419a2a951e97ad279
-  - enabled: 1
-    path: Assets/Scenes/Tutorial.unity
-    guid: 7f97e18cc93c4d84bbb7e2652d3a76f2
-  - enabled: 1
-    path: Assets/Scenes/Credits.unity
-    guid: 2d465ec2177abf14cab4d95c7113221b
   m_configObjects: {}
