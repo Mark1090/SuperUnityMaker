@@ -39121,7 +39121,6 @@ GameObject:
   - component: {fileID: 1871454446}
   - component: {fileID: 1871454445}
   - component: {fileID: 1871454444}
-  - component: {fileID: 1871454443}
   - component: {fileID: 1871454442}
   m_Layer: 5
   m_Name: Credits
@@ -39148,7 +39147,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -1800, y: -1020}
-  m_SizeDelta: {x: 180, y: 90}
+  m_SizeDelta: {x: 210, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!61 &1871454442
 BoxCollider2D:
@@ -39176,19 +39175,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 108, y: 54}
   m_EdgeRadius: 0
---- !u!114 &1871454443
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1871454440}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bb2b3a5a027e374fab85ca8f2ea4e3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levelname: Credits
 --- !u!114 &1871454444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39233,7 +39219,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1871454443}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LoadScene, Assembly-CSharp
         m_MethodName: Scene
         m_Mode: 1
@@ -39265,7 +39251,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 00dd0dbdc89c6d04987db9010e6b16a5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6f8e6d66991a2364a8c8838ef5d3a250, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -41208,8 +41194,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 340, y: -1020}
-  m_SizeDelta: {x: 180, y: 90}
+  m_AnchoredPosition: {x: 385, y: -1020}
+  m_SizeDelta: {x: 240, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!50 &1961490908
 Rigidbody2D:
@@ -41270,7 +41256,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bb2b3a5a027e374fab85ca8f2ea4e3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelname: LevelCreator
+  levelname: Tutorial
 --- !u!114 &1961490911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41347,7 +41333,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a51577fec4f14ee48aa8722cdad8d59c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fe351c362c2f7154cbd1bbff1a7e77de, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
