@@ -35,7 +35,7 @@ RectTransform:
   - {fileID: 2167536610884087290}
   - {fileID: 3388579245098241291}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -166,6 +166,7 @@ MonoBehaviour:
   Base_Level: {fileID: 4769810614203294401, guid: fcc6ec4dd26d2c8409b51b412d68fb74,
     type: 3}
   Title: {fileID: 1288032335187731891}
+  Path: {fileID: 2468787929497213724}
 --- !u!1 &154526555952538243
 GameObject:
   m_ObjectHideFlags: 0

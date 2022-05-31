@@ -34,6 +34,7 @@ public class Play_Level : MonoBehaviour
     public GameObject Player;
     public GameObject Base_Level;
     public TextMeshProUGUI Title;
+    public TextMeshProUGUI Path;
 
     Maker_Tile[] makerTiles;
 
@@ -47,6 +48,7 @@ public class Play_Level : MonoBehaviour
         level = (@"C:\Levels\" + name);
         
         Title.text = name.Replace(".uml", string.Empty);
+        Path.text = level;
     }
 
     public void Load()
