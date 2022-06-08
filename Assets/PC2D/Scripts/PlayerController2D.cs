@@ -8,13 +8,20 @@ using UnityEngine;
 public class PlayerController2D : MonoBehaviour
 {
     private PlatformerMotor2D _motor;
-
+    Vector3 initalPoint;
     // Use this for initialization
     void Start()
     {
         _motor = GetComponent<PlatformerMotor2D>();
+        initalPoint = transform.position;
     }
-
+    void OnTriggerEnter2D(Collider2D collision)
+	{
+		if (collision.CompareTag("Spikes"))
+		{
+			transform.position = initalPoint;
+		}
+	}
     // Update is called once per frame
     void Update()
     {
