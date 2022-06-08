@@ -113,7 +113,7 @@ public class LevelManager : MonoBehaviour {
         Debug.Log("Level Loaded");
     }
 
-    void Level()
+    public void Level()
     {
         if (Maker.playing)
         {
