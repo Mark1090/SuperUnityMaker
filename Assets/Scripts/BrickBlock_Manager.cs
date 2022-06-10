@@ -28,11 +28,11 @@ public class BrickBlock_Manager : MonoBehaviour
         rend.enabled = true;
     }
  
-    void OnTriggerEnter2D(Collider2D coll)
+    void OnColliderEnter2D(Collider2D coll)
     {
         if (coll.gameObject.tag == "Player")
         {
-            if (!coll.gameObject.GetComponent<PlayerScript>().ground)
+            if (coll.gameObject.GetComponent<PlatformerMotor2D>().jumped == true)
             {
                 Block.GetComponent<SpriteRenderer>().enabled = false;
                 system.Play(includeChildren);
