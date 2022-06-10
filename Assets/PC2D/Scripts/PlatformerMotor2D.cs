@@ -5,6 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(BoxCollider2D))]
 public class PlatformerMotor2D : MonoBehaviour
 {
+    public bool jumped = false;
     #region Public
 
     /// <summary>
@@ -1573,7 +1574,7 @@ public class PlatformerMotor2D : MonoBehaviour
         return (collidingAgainst & cs) != CollidedSurface.None;
     }
 
-    private bool IsInAir()
+    public bool IsInAir()
     {
         return motorState == MotorState.Jumping ||
                motorState == MotorState.Falling ||
@@ -1664,7 +1665,7 @@ public class PlatformerMotor2D : MonoBehaviour
         return ((0x1 << obj.layer) & movingPlatformLayerMask) != 0;
     }
 
-    private void HandlePreJumping()
+    public void HandlePreJumping()
     {
         if (_jumping.timeToldFrames >= 0)
         {
@@ -1689,7 +1690,7 @@ public class PlatformerMotor2D : MonoBehaviour
         // Jump?
         if (_jumping.pressed)
         {
-            bool jumped = true;
+            jumped = true;
 
             // Jump might mean different things depending on the state.
             if ((_jumping.lastValidJump == JumpState.JumpType.Normal && _jumping.jumpGraceFrames >= 0) ||

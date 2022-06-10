@@ -864,6 +864,41 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 813380169, guid: 5ea5c80a1f04bd24f99296c27bff3618,
         type: 3}
+    - target: {fileID: 1021956821145626587, guid: 9524f6abae9efa742a38cf4609ddba67,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1021956821145626587, guid: 9524f6abae9efa742a38cf4609ddba67,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1021956821145626587, guid: 9524f6abae9efa742a38cf4609ddba67,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1625783564}
+    - target: {fileID: 1021956821145626587, guid: 9524f6abae9efa742a38cf4609ddba67,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1021956821145626587, guid: 9524f6abae9efa742a38cf4609ddba67,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Level
+      objectReference: {fileID: 0}
+    - target: {fileID: 1021956821145626587, guid: 9524f6abae9efa742a38cf4609ddba67,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: LevelManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1021956821145626587, guid: 9524f6abae9efa742a38cf4609ddba67,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1021956821145626588, guid: 9524f6abae9efa742a38cf4609ddba67,
         type: 3}
       propertyPath: m_SizeDelta.x
@@ -899,6 +934,16 @@ PrefabInstance:
       propertyPath: parentGameObject
       value: 
       objectReference: {fileID: 607419255}
+    - target: {fileID: 1021956821192109739, guid: 9524f6abae9efa742a38cf4609ddba67,
+        type: 3}
+      propertyPath: parentGameObject
+      value: 
+      objectReference: {fileID: 607419255}
+    - target: {fileID: 1021956821192109739, guid: 9524f6abae9efa742a38cf4609ddba67,
+        type: 3}
+      propertyPath: parentGameObject2
+      value: 
+      objectReference: {fileID: 607419254}
     - target: {fileID: 1021956821192109740, guid: 9524f6abae9efa742a38cf4609ddba67,
         type: 3}
       propertyPath: m_Pivot.x
