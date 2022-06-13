@@ -761,7 +761,7 @@ public class PlatformerMotor2D : MonoBehaviour
     private Vector3 _previousLoc;
     private Collider2D[] _collidersUpAgainst = new Collider2D[DIRECTIONS_CHECKED];
     private Vector2[] _collidedNormals = new Vector2[DIRECTIONS_CHECKED];
-    private MotorState _prevState;
+    public MotorState _prevState;
     private Bounds _prevColliderBounds;
     private float _dotAllowedForSlopes;
     private float _cornerDistanceCheck;

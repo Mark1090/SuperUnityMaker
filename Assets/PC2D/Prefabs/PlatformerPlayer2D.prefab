@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6100000}
   - component: {fileID: 11400002}
   - component: {fileID: 11400000}
+  - component: {fileID: 7013518799636661940}
   m_Layer: 0
   m_Name: PlatformerPlayer2D
   m_TagString: Player
@@ -123,7 +124,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.1}
+  m_Offset: {x: -0.0014138222, y: -0.21188879}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -134,7 +135,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.42, y: 0.8}
+  m_Size: {x: 0.58320713, y: 0.5762224}
   m_EdgeRadius: 0
 --- !u!114 &11400002
 MonoBehaviour:
@@ -148,6 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d522286c13b9ff41b33ba3ff16074d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jumped: 0
   staticEnvLayerMask:
     serializedVersion: 2
     m_Bits: 8
@@ -206,6 +208,7 @@ MonoBehaviour:
   endDashNoGravityDuration: 0.1
   movingPlatformDebug: 0
   iterationDebug: 0
+  _prevState: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,3 +221,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ee1224ee819bd6418867d9a5171806d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!70 &7013518799636661940
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.06862545}
+  m_Size: {x: 0.40922546, y: 0.8627491}
+  m_Direction: 0

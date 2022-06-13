@@ -72,8 +72,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Item: {fileID: 5069010877138256478, guid: 2550dc6c550865d42b85c20d8ac63b7a, type: 3}
+  spriteRenderer: {fileID: 7193084169147541699}
+  OFF: {fileID: 21300000, guid: 91b0265a9dcac8e48a08a98862ec88ca, type: 3}
   angle: 0
-  numberOfObjects: 20
+  numberOfObjects: 1
   radius: 5
 --- !u!1 &7193084169147541701
 GameObject:
