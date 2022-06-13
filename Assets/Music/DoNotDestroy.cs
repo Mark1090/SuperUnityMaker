@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class DoNotDestroy : MonoBehaviour
 {
-	public float length;
-	private static Audio Source instance;
+	private static AudioSource instance;
 	private void Awake()
 	{
 		GameObject musicObj = GameObject.FindGameObjectWithTag("Music");
