@@ -884,8 +884,9 @@ MonoBehaviour:
   m_text: You can even grab walls to stick to them. However, you can't double-jump
     neither dash if you do so
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 475be8b7fc5138b4fbd17b68e4755e9c, type: 2}
+  m_sharedMaterial: {fileID: 5215702925770810755, guid: 475be8b7fc5138b4fbd17b68e4755e9c,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -974,7 +975,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  - {fileID: 5215702925770810755, guid: 475be8b7fc5138b4fbd17b68e4755e9c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1566,8 +1567,9 @@ MonoBehaviour:
     You can return here whenever you want by
     clicking the "Tutorial" Button in the Main screen'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 475be8b7fc5138b4fbd17b68e4755e9c, type: 2}
+  m_sharedMaterial: {fileID: 5215702925770810755, guid: 475be8b7fc5138b4fbd17b68e4755e9c,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1656,7 +1658,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  - {fileID: 5215702925770810755, guid: 475be8b7fc5138b4fbd17b68e4755e9c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1998,8 +2000,9 @@ MonoBehaviour:
   m_text: Also, you can Double-Jump clicking two times the Spacebar to reach high
     places
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 475be8b7fc5138b4fbd17b68e4755e9c, type: 2}
+  m_sharedMaterial: {fileID: 5215702925770810755, guid: 475be8b7fc5138b4fbd17b68e4755e9c,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2088,7 +2091,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  - {fileID: 5215702925770810755, guid: 475be8b7fc5138b4fbd17b68e4755e9c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2282,8 +2285,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: You can dash with the Ctrl. Key
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 475be8b7fc5138b4fbd17b68e4755e9c, type: 2}
+  m_sharedMaterial: {fileID: 5215702925770810755, guid: 475be8b7fc5138b4fbd17b68e4755e9c,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2372,7 +2376,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  - {fileID: 5215702925770810755, guid: 475be8b7fc5138b4fbd17b68e4755e9c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2461,8 +2465,9 @@ MonoBehaviour:
   m_text: Congratulations! You have understood the fundamentals of our game and you
     are ready to start your own adventure
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 475be8b7fc5138b4fbd17b68e4755e9c, type: 2}
+  m_sharedMaterial: {fileID: 5215702925770810755, guid: 475be8b7fc5138b4fbd17b68e4755e9c,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2551,7 +2556,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  - {fileID: 5215702925770810755, guid: 475be8b7fc5138b4fbd17b68e4755e9c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2633,8 +2638,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: Let's get started! You can jump clicking the Spacebar
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 475be8b7fc5138b4fbd17b68e4755e9c, type: 2}
+  m_sharedMaterial: {fileID: 5215702925770810755, guid: 475be8b7fc5138b4fbd17b68e4755e9c,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2723,7 +2729,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  - {fileID: 5215702925770810755, guid: 475be8b7fc5138b4fbd17b68e4755e9c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2806,8 +2812,9 @@ MonoBehaviour:
   m_text: Be careful! This creatures will  try to kill you. So don't let them touch
     you!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 475be8b7fc5138b4fbd17b68e4755e9c, type: 2}
+  m_sharedMaterial: {fileID: 5215702925770810755, guid: 475be8b7fc5138b4fbd17b68e4755e9c,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2896,7 +2903,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  - {fileID: 5215702925770810755, guid: 475be8b7fc5138b4fbd17b68e4755e9c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
