@@ -10,6 +10,7 @@ TagManager:
   - Shell
   - Unknown
   - Mushroom
+  - Music
   layers:
   - Default
   - TransparentFX
@@ -20,8 +21,8 @@ TagManager:
   - Spawn
   - Platform
   - Moving Platform
-  - 
-  - 
+  - Spikes
+  - Mushroom
   - 
   - 
   - 
