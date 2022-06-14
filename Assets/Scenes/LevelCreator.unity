@@ -154,6 +154,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &737030377 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: f53f0e5cd92ba5148aace93d59b06aaf,
+    type: 3}
+  m_PrefabInstance: {fileID: 1850495388}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1081287785 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3467567633184541751, guid: 3a7289409d59b8e47a1d775aa50e48f3,
@@ -483,7 +489,7 @@ MonoBehaviour:
   managerScript: {fileID: 1625783564}
   xLimit: 100
   yLimit: 100
-  player: {fileID: 1862363853}
+  player: {fileID: 737030377}
   offset: 1
   mainScreen: 0
   offsetSmoothing: 1
@@ -711,12 +717,6 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: f53f0e5cd92ba5148aace93d59b06aaf, type: 3}
---- !u!1 &1862363853 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1503140549746616, guid: cbb0651332e7dd744b0292df95c6e397,
-    type: 3}
-  m_PrefabInstance: {fileID: 1803474840}
-  m_PrefabAsset: {fileID: 0}
 --- !u!850595691 &2075341391
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -1207,10 +1207,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7939396889103244417, guid: fcc6ec4dd26d2c8409b51b412d68fb74,
+    - target: {fileID: 7939396888739997829, guid: fcc6ec4dd26d2c8409b51b412d68fb74,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939396888739997829, guid: fcc6ec4dd26d2c8409b51b412d68fb74,
         type: 3}
       propertyPath: m_TagString
       value: Spikes
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939396888739997829, guid: fcc6ec4dd26d2c8409b51b412d68fb74,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939396889103244417, guid: fcc6ec4dd26d2c8409b51b412d68fb74,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7939396889103244417, guid: fcc6ec4dd26d2c8409b51b412d68fb74,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
