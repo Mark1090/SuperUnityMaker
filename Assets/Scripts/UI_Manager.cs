@@ -21,19 +21,22 @@ public class UI_Manager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Maker.playing || ForcePlaying)
+        if (Maker.playing)
         {
             Settings.SetActive(false);
             BlockSelec.SetActive(false);
             CoinUI.SetActive(true);
         }
-        else
+        else if (ForcePlaying)
         {
+            CoinUI.SetActive(true);
+
+        } else{
             Settings.SetActive(true);
             BlockSelec.SetActive(true);
             CoinUI.SetActive(false);
             Coin_Manager.Coins = 0;
-        }
+        } 
 
         CoinTXT.text = Coin_Manager.Coins.ToString();
     }
