@@ -1422,7 +1422,7 @@ GameObject:
   - component: {fileID: 5000499976035828183}
   m_Layer: 6
   m_Name: Y_Limit
-  m_TagString: Grass
+  m_TagString: Spikes
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1547,7 +1547,7 @@ GameObject:
   - component: {fileID: 5000499977044129228}
   - component: {fileID: 5000499977044129226}
   - component: {fileID: 5000499977044129227}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: X_Limit
   m_TagString: Grass
   m_Icon: {fileID: 0}
