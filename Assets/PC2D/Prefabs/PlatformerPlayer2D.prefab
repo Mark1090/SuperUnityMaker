@@ -164,7 +164,7 @@ MonoBehaviour:
   groundSpeed: 8
   timeToGroundSpeed: 0.1
   groundStopDistance: 0.1
-  airSpeed: 5
+  airSpeed: 6
   changeDirectionInAir: 1
   timeToAirSpeed: 0
   airStopDistance: 2
@@ -173,7 +173,7 @@ MonoBehaviour:
   fastFallSpeed: 32
   fastFallGravityMultiplier: 1.5
   jumpHeight: 1.5
-  extraJumpHeight: 0.5
+  extraJumpHeight: 0.3
   numOfAirJumps: 1
   jumpWindowWhenFalling: 0.2
   jumpWindowWhenActivated: 0.2
@@ -185,10 +185,10 @@ MonoBehaviour:
   stickOnGround: 1
   distanceToCheckToStick: 0.4
   enableWallJumps: 1
-  wallJumpMultiplier: 1.35
+  wallJumpMultiplier: 1.25
   wallJumpAngle: 50
   enableWallSticks: 1
-  wallSticksDuration: 1
+  wallSticksDuration: 0.25
   enableWallSlides: 1
   wallSlideSpeed: 1
   timeToWallSlideSpeed: 3
