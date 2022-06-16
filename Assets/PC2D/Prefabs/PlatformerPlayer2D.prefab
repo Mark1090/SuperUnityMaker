@@ -187,7 +187,7 @@ MonoBehaviour:
   distanceToCheckToStick: 0.4
   enableWallJumps: 1
   wallJumpMultiplier: 1.25
-  wallJumpAngle: 50
+  wallJumpAngle: 45
   enableWallSticks: 1
   wallSticksDuration: 0.25
   enableWallSlides: 1
