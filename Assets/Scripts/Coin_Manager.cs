@@ -18,7 +18,6 @@ public class Coin_Manager : MonoBehaviour
 
     IEnumerator Action()
     {
-        Coins++;
         yield return new WaitForEndOfFrame();
         Destroy(this.gameObject);
     }
