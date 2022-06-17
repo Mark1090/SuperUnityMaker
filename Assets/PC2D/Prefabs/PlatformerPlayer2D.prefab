@@ -228,7 +228,7 @@ MonoBehaviour:
   IsActive2: 0
   audio1: {fileID: 6112585965109853975}
   audio2: {fileID: 5429303102302086114}
-  ForcePlaying: 1
+  ForcePlaying: 0
 --- !u!70 &7013518799636661940
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
