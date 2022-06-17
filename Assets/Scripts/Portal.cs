@@ -4,15 +4,25 @@ using UnityEngine;
 
 public class Portal : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject Menu;
+    public bool IsActive = false;
 
     // Update is called once per frame
-    void Update()
+    void OnTriggerEnter2D(Collider2D coll)
     {
-        
+        if (coll.gameObject.tag == "Player")
+        {
+            if (coll.gameObject.GetComponent<PlatformerMotor2D>().motorState == PlatformerMotor2D.MotorState.Jumping)
+            {
+                {
+                    IsActive = !IsActive;
+
+                    Menu.gameObject.SetActive(IsActive);
+                }
+
+            }
+
+        }
+
     }
 }
