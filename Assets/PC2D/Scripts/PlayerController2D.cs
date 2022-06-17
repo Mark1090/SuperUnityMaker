@@ -34,6 +34,7 @@ public class PlayerController2D : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
         gameObject.GetComponent<Renderer>().enabled = true;
+        gameObject.GetComponent<BoxCollider2D>().enabled = true;
         transform.position = initalPoint;
     }
     // Update is called once per frame
