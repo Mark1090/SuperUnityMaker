@@ -1015,6 +1015,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: VictoryMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 4797303893160023128, guid: 32a45e51101938c4b8a4432c8371a995,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4797303893160023129, guid: 32a45e51101938c4b8a4432c8371a995,
         type: 3}
       propertyPath: m_RootOrder
@@ -1023,12 +1028,12 @@ PrefabInstance:
     - target: {fileID: 4797303893160023129, guid: 32a45e51101938c4b8a4432c8371a995,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: 4797303893160023129, guid: 32a45e51101938c4b8a4432c8371a995,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: 4797303893160023129, guid: 32a45e51101938c4b8a4432c8371a995,
         type: 3}
