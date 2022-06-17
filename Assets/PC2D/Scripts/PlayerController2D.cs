@@ -1,7 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿
 using UnityEngine;
-using UnityEngine.Audio;
 
 /// <summary>
 /// This class is a simple example of how to build a controller that interacts with PlatformerMotor2D.
@@ -9,7 +7,7 @@ using UnityEngine.Audio;
 [RequireComponent(typeof(PlatformerMotor2D))]
 public class PlayerController2D : MonoBehaviour
 {
-    public AudioSource audio;
+    public bool ForcePlaying = true;
     private PlatformerMotor2D _motor;
     Vector3 initalPoint;
     // Use this for initialization
@@ -22,6 +20,7 @@ public class PlayerController2D : MonoBehaviour
 	{
 		if (collision.CompareTag("Spikes"))
 		{
+<<<<<<< Updated upstream
             StartCoroutine(Action());
             audio.Play();
             gameObject.GetComponent<Renderer>().enabled = false;
@@ -37,38 +36,82 @@ public class PlayerController2D : MonoBehaviour
         gameObject.GetComponent<BoxCollider2D>().enabled = true;
         transform.position = initalPoint;
     }
+=======
+			transform.position = initalPoint;
+		}
+	}
+>>>>>>> Stashed changes
     // Update is called once per frame
     void Update()
     {
-        if (Mathf.Abs(Input.GetAxis(PC2D.Input.HORIZONTAL)) > PC2D.Globals.INPUT_THRESHOLD)
+        if (ForcePlaying)
         {
-            _motor.normalizedXMovement = Input.GetAxis(PC2D.Input.HORIZONTAL);
-        }
-        else
-        {
-            _motor.normalizedXMovement = 0;
+            if (Mathf.Abs(Input.GetAxis(PC2D.Input.HORIZONTAL)) > PC2D.Globals.INPUT_THRESHOLD)
+            {
+                _motor.normalizedXMovement = Input.GetAxis(PC2D.Input.HORIZONTAL);
+            }
+            else
+            {
+                _motor.normalizedXMovement = 0;
+            }
+
+            // Jump?
+            if (Input.GetButtonDown(PC2D.Input.JUMP))
+            {
+                _motor.Jump();
+            }
+
+            _motor.jumpingHeld = Input.GetButton(PC2D.Input.JUMP);
+
+            if (Input.GetAxis(PC2D.Input.VERTICAL) < -PC2D.Globals.FAST_FALL_THRESHOLD)
+            {
+                _motor.fallFast = true;
+            }
+            else
+            {
+                _motor.fallFast = false;
+            }
+
+            if (Input.GetButtonDown(PC2D.Input.DASH))
+            {
+                _motor.Dash();
+            }
         }
 
-        // Jump?
-        if (Input.GetButtonDown(PC2D.Input.JUMP))
+
+        else if (Maker.playing)
         {
-            _motor.Jump();
+            if (Mathf.Abs(Input.GetAxis(PC2D.Input.HORIZONTAL)) > PC2D.Globals.INPUT_THRESHOLD)
+            {
+                _motor.normalizedXMovement = Input.GetAxis(PC2D.Input.HORIZONTAL);
+            }
+            else
+            {
+                _motor.normalizedXMovement = 0;
+            }
+
+            // Jump?
+            if (Input.GetButtonDown(PC2D.Input.JUMP))
+            {
+                _motor.Jump();
+            }
+
+            _motor.jumpingHeld = Input.GetButton(PC2D.Input.JUMP);
+
+            if (Input.GetAxis(PC2D.Input.VERTICAL) < -PC2D.Globals.FAST_FALL_THRESHOLD)
+            {
+                _motor.fallFast = true;
+            }
+            else
+            {
+                _motor.fallFast = false;
+            }
+
+            if (Input.GetButtonDown(PC2D.Input.DASH))
+            {
+                _motor.Dash();
+            }
         }
 
-        _motor.jumpingHeld = Input.GetButton(PC2D.Input.JUMP);
-
-        if (Input.GetAxis(PC2D.Input.VERTICAL) < -PC2D.Globals.FAST_FALL_THRESHOLD)
-        {
-            _motor.fallFast = true;
-        }
-        else
-        {
-            _motor.fallFast = false;
-        }
-
-        if (Input.GetButtonDown(PC2D.Input.DASH))
-        {
-            _motor.Dash();
-        }
     }
 }
