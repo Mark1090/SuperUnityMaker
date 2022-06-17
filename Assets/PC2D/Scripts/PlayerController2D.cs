@@ -1,6 +1,6 @@
-﻿
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-
 /// <summary>
 /// This class is a simple example of how to build a controller that interacts with PlatformerMotor2D.
 /// </summary>
@@ -22,7 +22,7 @@ public class PlayerController2D : MonoBehaviour
 		{
 
             StartCoroutine(Action());
-            audio.Play();
+            GetComponent<AudioSource>().Play();
             gameObject.GetComponent<Renderer>().enabled = false;
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
 
