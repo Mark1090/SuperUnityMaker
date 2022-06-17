@@ -9,6 +9,8 @@ using UnityEngine.Audio;
 [RequireComponent(typeof(PlatformerMotor2D))]
 public class PlayerController2D : MonoBehaviour
 {
+    public GameObject Menu2;
+    public bool IsActive2 = false;
     public AudioSource audio1;
     public AudioSource audio2;
     public bool ForcePlaying = true;
@@ -31,6 +33,16 @@ public class PlayerController2D : MonoBehaviour
             gameObject.GetComponent<CapsuleCollider2D>().enabled = false;
 
         }
+        if ((collision.gameObject.tag == "Portal") && (IsActive2 == false))
+        {
+            IsActive2 = true;
+            Menu2.gameObject.SetActive(IsActive2);
+            gameObject.GetComponent<Renderer>().enabled = false;
+            gameObject.GetComponent<BoxCollider2D>().enabled = false;
+            gameObject.GetComponent<CapsuleCollider2D>().enabled = false
+        }
+        else if 
+
     }
     
     IEnumerator Action()
