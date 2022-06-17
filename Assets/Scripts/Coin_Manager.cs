@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class Coin_Manager : MonoBehaviour
 {
+    public AudioSource audio;
     public static int Coins;
 
     void OnTriggerEnter2D(Collider2D coll)
@@ -12,13 +14,14 @@ public class Coin_Manager : MonoBehaviour
         {
             Coins++;
             StartCoroutine(Action());
-            Destroy(this.gameObject);
+            audio.Play();
+            gameObject.GetComponent<Renderer>().enabled = false;
         }
     }
 
     IEnumerator Action()
     {
-        yield return new WaitForEndOfFrame();
+        yield return new WaitForSeconds(2f);
         Destroy(this.gameObject);
     }
 }
