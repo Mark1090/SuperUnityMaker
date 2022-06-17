@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5069010877138256480}
   - component: {fileID: 6378046847096124658}
   - component: {fileID: 8401853184336464127}
-  - component: {fileID: 1702933894555248659}
+  - component: {fileID: 6781434758177383497}
   m_Layer: 10
   m_Name: Mushroom
   m_TagString: Mushroom
@@ -196,18 +196,23 @@ AreaEffector2D:
   m_ForceTarget: 1
   m_Drag: 0
   m_AngularDrag: 0
---- !u!111 &1702933894555248659
-Animation:
+--- !u!95 &6781434758177383497
+Animator:
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5069010877138256478}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 214db7bc8e87b7f40842a0f9fea27d9d, type: 2}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fa10a735065d63843884d15c26f85266, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

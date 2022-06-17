@@ -20,7 +20,6 @@ public class PlayerController2D : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-    ForcePlaying = true;
     _motor = GetComponent<PlatformerMotor2D>();
         initalPoint = transform.position;
     }
@@ -100,6 +99,9 @@ public class PlayerController2D : MonoBehaviour
 
         else if (Maker.playing)
         {
+            
+
+
             if (Mathf.Abs(Input.GetAxis(PC2D.Input.HORIZONTAL)) > PC2D.Globals.INPUT_THRESHOLD)
             {
                 _motor.normalizedXMovement = Input.GetAxis(PC2D.Input.HORIZONTAL);
@@ -131,6 +133,10 @@ public class PlayerController2D : MonoBehaviour
                 _motor.Dash();
                 audio2.Play();
             }
+        }
+        else
+        {
+            transform.position = initalPoint;
         }
 
     }

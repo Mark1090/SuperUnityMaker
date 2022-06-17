@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 9196417516411604572}
   - component: {fileID: 9196417516411604571}
   - component: {fileID: 1218585368475528476}
+  - component: {fileID: 2752749630009128212}
   m_Layer: 0
   m_Name: Portal_End
   m_TagString: Portal
@@ -33,7 +34,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &9196417516411604573
 BoxCollider2D:
@@ -145,5 +146,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a02546644b0d3fd488f5ec94577cdc82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Menu: {fileID: 0}
+  Menu: {fileID: 4797303893160023128, guid: 32a45e51101938c4b8a4432c8371a995, type: 3}
   IsActive: 0
+--- !u!114 &2752749630009128212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9196417516411604575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f9a7b92c8c014c468bcc1ac216ae24f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: -722460050, guid: 62a865f63e9369743a4e37a7b3c7bdd2, type: 3}
+  id: 7
