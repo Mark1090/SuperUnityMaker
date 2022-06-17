@@ -1,12 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
+
 /// <summary>
 /// This class is a simple example of how to build a controller that interacts with PlatformerMotor2D.
 /// </summary>
 [RequireComponent(typeof(PlatformerMotor2D))]
 public class PlayerController2D : MonoBehaviour
 {
+    public AudioSource audio1;
+    public AudioSource audio2;
     public bool ForcePlaying = true;
     private PlatformerMotor2D _motor;
     Vector3 initalPoint;
@@ -20,10 +24,11 @@ public class PlayerController2D : MonoBehaviour
 	{
 		if (collision.CompareTag("Spikes"))
 		{
-
             StartCoroutine(Action());
-            GetComponent<AudioSource>().Play();
+            audio1.Play();
             gameObject.GetComponent<Renderer>().enabled = false;
+            gameObject.GetComponent<BoxCollider2D>().enabled = false;
+            gameObject.GetComponent<CapsuleCollider2D>().enabled = false;
 
         }
     }
@@ -32,6 +37,9 @@ public class PlayerController2D : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
         gameObject.GetComponent<Renderer>().enabled = true;
+        gameObject.GetComponent<BoxCollider2D>().enabled = true;
+        gameObject.GetComponent<CapsuleCollider2D>().enabled = true;
+
         transform.position = initalPoint;
     }
 
@@ -104,6 +112,7 @@ public class PlayerController2D : MonoBehaviour
             if (Input.GetButtonDown(PC2D.Input.DASH))
             {
                 _motor.Dash();
+                audio2.Play();
             }
         }
 
