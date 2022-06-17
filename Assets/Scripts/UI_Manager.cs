@@ -18,11 +18,6 @@ public class UI_Manager : MonoBehaviour
         
     }
 
-    public void ResetCoins()
-    {
-        Coin_Manager.Coins = 0;
-    }
-
     // Update is called once per frame
     void Update()
     {
