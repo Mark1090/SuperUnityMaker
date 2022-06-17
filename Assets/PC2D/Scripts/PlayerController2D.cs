@@ -24,7 +24,6 @@ public class PlayerController2D : MonoBehaviour
             StartCoroutine(Action());
             GetComponent<AudioSource>().Play();
             gameObject.GetComponent<Renderer>().enabled = false;
-            gameObject.GetComponent<BoxCollider2D>().enabled = false;
 
         }
     }
@@ -33,7 +32,6 @@ public class PlayerController2D : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
         gameObject.GetComponent<Renderer>().enabled = true;
-        gameObject.GetComponent<BoxCollider2D>().enabled = true;
         transform.position = initalPoint;
     }
 
