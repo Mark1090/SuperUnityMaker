@@ -743,7 +743,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 5355475005369452573}
         m_TargetAssemblyTypeName: LoadScene, Assembly-CSharp
-        m_MethodName: Scene
+        m_MethodName: Exit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

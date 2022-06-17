@@ -324,7 +324,7 @@ Transform:
   m_Children:
   - {fileID: 4797303892626407452}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4797303893160023130
 MonoBehaviour:
@@ -758,7 +758,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 5355475005369452573}
         m_TargetAssemblyTypeName: LoadScene, Assembly-CSharp
-        m_MethodName: Scene
+        m_MethodName: Exit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -780,4 +780,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bb2b3a5a027e374fab85ca8f2ea4e3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelname: MainScreen
+  levelname: 
