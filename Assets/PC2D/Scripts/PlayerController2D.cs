@@ -14,12 +14,14 @@ public class PlayerController2D : MonoBehaviour
     public AudioSource audio1;
     public AudioSource audio2;
     public bool ForcePlaying = true;
+    public bool MainScreenRoblox = false;
     private PlatformerMotor2D _motor;
     Vector3 initalPoint;
     // Use this for initialization
     void Start()
     {
-        _motor = GetComponent<PlatformerMotor2D>();
+    ForcePlaying = true;
+    _motor = GetComponent<PlatformerMotor2D>();
         initalPoint = transform.position;
     }
     void OnTriggerEnter2D(Collider2D collision)
@@ -39,9 +41,12 @@ public class PlayerController2D : MonoBehaviour
             Menu2.gameObject.SetActive(IsActive2);
             gameObject.GetComponent<Renderer>().enabled = false;
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
-            gameObject.GetComponent<CapsuleCollider2D>().enabled = false
+            gameObject.GetComponent<CapsuleCollider2D>().enabled = false;
         }
-        else if 
+        if ((collision.gameObject.tag == "Portal") && (MainScreenRoblox == true))
+        {
+            transform.position = initalPoint;
+        }
 
     }
     
