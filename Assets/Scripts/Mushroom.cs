@@ -19,14 +19,18 @@ public class Mushroom : MonoBehaviour
         rb.velocity = new Vector3(direction * 3f, rb.velocity.y);
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D coll)
     {
         direction = direction * -1;
 
-        if (collision.gameObject.tag == "Player")
+        if (coll.gameObject.tag == "Player")
         {
-            collision.gameObject.GetComponent<PlayerScript>().PowerUp = 1;
             Destroy(this.gameObject);
+            Coin_Manager.Coins ++;
+            Coin_Manager.Coins ++;
+            Coin_Manager.Coins++;
+            Coin_Manager.Coins++;
+            Coin_Manager.Coins++;
         }
     }
 }

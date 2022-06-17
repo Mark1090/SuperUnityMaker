@@ -16,6 +16,8 @@ public class Coin_Manager : MonoBehaviour
             StartCoroutine(Action());
             audio.Play();
             gameObject.GetComponent<Renderer>().enabled = false;
+            gameObject.GetComponent<BoxCollider2D>().enabled = false;
+
         }
     }
 
