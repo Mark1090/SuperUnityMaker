@@ -20,7 +20,7 @@ public class PlayerController2D : MonoBehaviour
 	{
 		if (collision.CompareTag("Spikes"))
 		{
-<<<<<<< Updated upstream
+
             StartCoroutine(Action());
             audio.Play();
             gameObject.GetComponent<Renderer>().enabled = false;
@@ -36,11 +36,7 @@ public class PlayerController2D : MonoBehaviour
         gameObject.GetComponent<BoxCollider2D>().enabled = true;
         transform.position = initalPoint;
     }
-=======
-			transform.position = initalPoint;
-		}
-	}
->>>>>>> Stashed changes
+
     // Update is called once per frame
     void Update()
     {
